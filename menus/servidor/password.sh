@@ -31,4 +31,3 @@ while read SSHPORT; do
         echo -n "${NORMAL}Please enter the port you would like SSH to run on ${WHITE}> "
     fi
 done
-
