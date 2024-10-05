@@ -9,6 +9,11 @@ texto
 Primeiro
 
 ``` Iniciar
+cd /home
+git clone https://github.com/onixsat/almalinux8.git
+cd almalinux8
+bash btk.sh
+
 wget https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/iniciar.sh -O ./iniciar.sh && bash iniciar.sh
 ```
 -----------------------------------
