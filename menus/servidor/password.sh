@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 titulo "Atualizando a password..."
-echo 'password' | passwd --stdin root
+echo 'Password+2024' | passwd --stdin root
 esperar "sleep 3" "${WHITE}Atualizando... "
 
 echo -e ""
