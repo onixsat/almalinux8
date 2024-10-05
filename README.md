@@ -3,7 +3,7 @@ __Bash Almalinux 8__
 - __[pica](https://nodeca.github.io/pica/demo/)__ - texto
   texto.
 
-wget https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/iniciar.sh -O ./iniciar.sh && bash iniciar.sh
+texto
 
 ---
 
@@ -107,11 +107,7 @@ Sample text here...
 Syntax highlighting
 
 ``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
+wget https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/iniciar.sh -O ./iniciar.sh && bash iniciar.sh
 ```
 
 ## Tables
