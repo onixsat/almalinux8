@@ -1,5 +1,5 @@
 function globais(){
-  sshport="222"
+  sshport="2022"
   version="1.0.0"
   WHITE="$(tput setaf 7)"
   CYAN="$(tput setaf 6)"
