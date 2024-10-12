@@ -4,7 +4,6 @@
 thisFilePath="$( dirname "${BASH_SOURCE[0]}" )"
 source "$thisFilePath/libs/pathUtils.sh"
 source "$thisFilePath/libs/functions.sh"
-source "$thisFilePath/libs/config.sh"
 
 #source "$thisFilePath/libs/privado.sh"
 #chmod +x "$thisFilePath/libs/privado.sh"

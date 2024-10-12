@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-source "$thisFilePath/libs/config.sh"
-
 titulo "Atualizando o sistema..."
 sudo yum update -y ;
 sudo yum upgrade -y ;

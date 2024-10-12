@@ -5,7 +5,7 @@ function globais(){
   hostname="srv.encpro.pt"
   ns1="ns1.encpro.pt"
   ns2="ns2.encpro.pt"
-  readonly ip="135.125.183.142"
+  ip="135.125.183.142"
 
   sshport="2022"
   version="1.0.0"
