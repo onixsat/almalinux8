@@ -1,13 +1,5 @@
 function globais(){
-  password="password"
-  sshport="2022"
-  domain="encpro.pt"
-  hostname="srv.encpro.pt"
-  ns1="ns1.encpro.pt"
-  ns2="ns2.encpro.pt"
-  ip="135.125.183.142"
-
-  sshport="2022"
+  source config/config.sh
   version="1.0.0"
   WHITE="$(tput setaf 7)"
   CYAN="$(tput setaf 6)"
@@ -182,6 +174,40 @@ function cores() {
         echo "$i: `tput setaf $i`0123456789abcdef@`tput sgr0`"
         `tput setaf $i` 2>&1 | grep -Eo "\^\[\[[0-9]+m$"
     done
+}
+function proteger() {
+
+    # https://github.com/nodesocket/cryptr
+    # CRYPTR_PASSWORD=A1EO7S9SsQYcPChOr47n cryptr encrypt ./config/config.sh
+    # CRYPTR_PASSWORD=A1EO7S9SsQYcPChOr47n cryptr decrypt ./config/config.sh.aes
+
+    if [ ! -d "cryptr" ]
+    then
+      titulo "Instalando cryptr..."
+      git clone https://github.com/nodesocket/cryptr.git
+      ln -s "$PWD"/cryptr/cryptr.bash /usr/local/bin/cryptr
+      bash cryptr/tools/cryptr-bash-completion.bash
+      esperar "sleep 1" "${WHITE}Instalado... "
+    else
+
+      file="config/config.sh.aes"
+      if [[ ! -f "$file" && ! -s "$file" ]]; then
+          exit "oi"
+      fi
+
+      # Criar o ficheiro config.sh
+      cryptr/cryptr.bash decrypt config/config.sh.aes
+
+      data=$(<config/config.sh)
+      tmpfile="$(mktemp /tmp/myscript.XXXXXX)"
+      cat <<< "$data" > "$tmpfile"
+     # cat "$tmpfile"
+      #sleep
+          rm -f "config/config.sh"
+          trap 'rm -f "$tmpfile"' SIGTERM SIGINT EXIT
+     # cat "$tmpfile"
+      source "$tmpfile"
+    fi
 }
 @confirm() {
   local message="$*"

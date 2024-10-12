@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f60a6dd-7f81-4cb8-907e-5a0620f491cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/btk.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.sh" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/functions.sh" beforeDir="false" afterPath="$PROJECT_DIR$/libs/functions.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/dns.sh" beforeDir="false" afterPath="$PROJECT_DIR$/menus/dns.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/servidor/iniciar.sh" beforeDir="false" afterPath="$PROJECT_DIR$/menus/servidor/iniciar.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/servidor.sh" beforeDir="false" afterPath="$PROJECT_DIR$/menus/servidor.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Onix/Documents/GitHub/almalinux8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Onix/Documents/GitHub/almalinux8/config&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -44,6 +45,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Onix\Documents\GitHub\almalinux8\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Onix\Documents\GitHub\almalinux8\menus" />
     </key>
@@ -64,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728746159055</updated>
-      <workItem from="1728746160070" duration="13087000" />
+      <workItem from="1728746160070" duration="15298000" />
     </task>
     <servers />
   </component>

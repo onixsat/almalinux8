@@ -9,7 +9,7 @@ addMenuItem "menuServidor" "Iniciar" showIniciar
 addMenuItem "menuServidor" "Instalar" showInstalar
 addMenuItem "menuServidor" "Configuracao" loadMenu "menuConfig"
 
-
+source menus/servidor/config.sh
 
 function showIniciar(){
 	banner "Servidor" "Configuracão" "Iniciar"
