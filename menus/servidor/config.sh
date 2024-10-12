@@ -1,30 +1,29 @@
 #!/usr/bin/env bash
 
-read -r -d '' ENV_CONFIG << EOM
-  Main Menu
-  - Configuracao
+read -r -d '' ENV_VAR_MENU << EOM
+  Menu ${BLUE}Servidor - ${BOLD}${RED}Configuracão${NORMAL}
 EOM
-createMenu "menuConfig" "$ENV_CONFIG"
-addMenuItem "menuConfig" "Informacoes" generalsCommands
-addMenuItem "menuConfig" "DNS" outer
-addMenuItem "menuConfig" "Mail" mailMenu
-addMenuItem "menuConfig" "Sobre" loadMenu "subMenu"
-
+ createMenu "menuConfig" "$ENV_VAR_MENU"
+ printMenuStrs "menuConfig"
+ addMenuItem "menuConfig" "Informacoes" generalsCommands
+ addMenuItem "menuConfig" "DNS" outer
+ addMenuItem "menuConfig" "Mail" mailMenu
+ addMenuItem "menuConfig" "Sobre" loadMenu "subMenu"
+ addMenuItem "menuConfig" "Go back" loadMenu "menuServidor"
+#loadMenu "menuConfig"
+#pause
 
 read -r -d '' ENV_CONFIG222 << EOM
-  Main Menu
-  - Configuracao Sobre
+  Menu ${BLUE}Servidor - ${BOLD}${RED}Sobre${NORMAL}
 EOM
 createMenu "subMenu" "$ENV_CONFIG222"
 
 printMenuStrs "subMenu"
 printMenuStrs "menuConfig"
-
-addMenuItem "subMenu" "Print date" 'date'
 addMenuItem "subMenu" "Go back" loadMenu "menuConfig"
-	
+
 reload(){
-data1=$1 data2=$2 
+data1=$1 data2=$2
 	echo -n "Press Enter to $data1"
 	read response
     loadMenu "$data2"
@@ -35,12 +34,12 @@ filename="${1}" # $1 represent first argument
 
 
 
- if [ -e "$filename" ]; then 
-    content=$(cat "$filename") 
-    echo -e "$content" 
+ if [ -e "$filename" ]; then
+    content=$(cat "$filename")
+    echo -e "$content"
 	return 0
-else 
-    echo "File not found: $filename" 
+else
+    echo "File not found: $filename"
 fi
     return 1
 }
@@ -61,8 +60,7 @@ getCurrentPath(){
 generalsCommands(){
 
 read -r -d '' ENV_CONFIG << EOM
-  Main Menu
-  - Configuracao Info
+ Menu ${BLUE}Servidor - ${BOLD}${RED}Informacoes${NORMAL}
 EOM
 
 createMenu "menuConfig2" "$ENV_CONFIG"
@@ -72,6 +70,7 @@ addMenuItem "menuConfig2" "getCurrentPath" getCurrentPath
 addMenuItem "menuConfig2" "Go back" 'loadMenu "menuConfig"'
 
     loadMenu "menuConfig2"
+    #reload "return" "menuConfig"
 	pause
 }
 mailMenu(){
@@ -112,7 +111,7 @@ function outer() {
 		fi
 
 	}
-	
+
 	Check_Root() {
 		while true; do
 		  echo -e "\nHostnames:"
@@ -142,7 +141,7 @@ function outer() {
 	}
     inner() {
 
-hn=$1 srv=$2 
+hn=$1 srv=$2
 /bin/sed -i -- 's/'"$hn"'/'"$srv"'/g' /etc/hosts
 /bin/sed -i -- 's/'"$hn"'/'"$srv"'/g' /etc/hostname
 hostnamectl set-hostname $srv
@@ -166,11 +165,11 @@ fi
 
 	printf "\nNovo /etc/resolv.conf:\n"
 	  linearSearch "/etc/resolv.conf"
-	
+
     }
 
 nameserver=("8.8.8.8" "8.8.4.4")
-srv="srv.smartiptv.pt"
+srv="srv.encpro.pt"
 	hn=$(/bin/hostname)
 	#hn=$(hostname -f)
 	#hn="vps-98e038c0.vps.ovh.net"
@@ -178,19 +177,19 @@ srv="srv.smartiptv.pt"
 
 	Check_Root
 	inner $hn $srv
-	
+
 	if [ "$continua" = true ]; then
     echo -e "The Boolean is true\n\n"
-	
+
 		echo -n "Press Enter to return to menu config"
 		read response
     reload "config" "menuConfig"
-	
+
 
 	  else
 	  printf "lol\n\n"
 	  fi
-	  
+
 	  pause
 }
 
@@ -204,7 +203,7 @@ function showMailip() {
 			echo "$TARGET_FILE exists."
 
 				echo -n '' > $TARGET_FILE
-				wc -c $TARGET_FILE      
+				wc -c $TARGET_FILE
 				echo "" > $TARGET_FILE
 				truncate -s 0 $TARGET_FILE
 
@@ -214,10 +213,10 @@ function showMailip() {
 
 
         touch $TARGET_FILE
-        echo 'smartiptv.pt: 94.23.75.50' > $TARGET_FILE
-        echo 'mail.smartiptv.pt: 94.23.75.50' >> $TARGET_FILE
+        echo 'encpro.pt: 141.95.110.219' > $TARGET_FILE
+        echo 'mail.encpro.pt: 141.95.110.219' >> $TARGET_FILE
         echo '*: 54.38.191.102' >> $TARGET_FILE
-		
+
         reload "return" "menuConfig3"
         pause
 }
@@ -232,7 +231,7 @@ function showMailhelo() {
 			echo "$TARGET_FILE exists."
 
 				echo -n '' > $TARGET_FILE
-				wc -c $TARGET_FILE      
+				wc -c $TARGET_FILE
 				echo "" > $TARGET_FILE
 				truncate -s 0 $TARGET_FILE
 
@@ -242,10 +241,10 @@ function showMailhelo() {
 
 
         touch $TARGET_FILE
-        echo 'smartiptv.pt: mail.smartiptv.pt' > $TARGET_FILE
-        echo 'mail.smartiptv.pt: mail.smartiptv.pt' >> $TARGET_FILE
-        echo '*: srv.smartiptv.pt' >> $TARGET_FILE
-		
+        echo 'encpro.pt: mail.encpro.pt' > $TARGET_FILE
+        echo 'mail.encpro.pt: mail.encpro.pt' >> $TARGET_FILE
+        echo '*: srv.encpro.pt' >> $TARGET_FILE
+
         reload "return" "menuConfig3"
         pause
 }
@@ -259,11 +258,11 @@ function showMailUpdate(){
     echo $ret_val
 
 
-y='94.23.75.50'
+y='141.95.110.219'
 x='XYZ'
-sed -i -e 's/$x/$y/g' /etc/mailips  
+sed -i -e 's/$x/$y/g' /etc/mailips
 #or,
-sed -i -e "s/$x/$y/g" /etc/mailips  
+sed -i -e "s/$x/$y/g" /etc/mailips
 
 pause
 }

@@ -1,10 +1,20 @@
-__Bash Almalinux 8__
-- __[pica](https://nodeca.github.io/pica/demo/)__ - texto
-  texto.
+__Bash Almalinux 8__ 
+- __[SSH](https://nodeca.github.io/pica/demo/)__ - centos \
+*CanTArDq5ZrM*\
+*Onixsat2024*
 
-texto
 
 ---
+## recursive WP file & folder permissions fix
+find /home/*/public_html -type d -exec chmod 755 {} \;
+find /home/*/public_html -type f -exec chmod 644 {} \;
+
+## ownership swapping
+# nobody : SYS account
+# project : FTP account
+chown -R nobody /home/project/
+chown -R project /home/project/
+
 
 Primeiro
 

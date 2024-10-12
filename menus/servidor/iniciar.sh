@@ -1,12 +1,34 @@
 #!/usr/bin/env bash
 
+source "$thisFilePath/libs/config.sh"
+
+titulo "Atualizando o sistema..."
+sudo yum update -y ;
+sudo yum upgrade -y ;
+dnf install wget curl zip unzip net-tools yum-utils -y ;
+esperar "sleep 1" "${WHITE}Atualizando... "
+
+titulo "Stopping and disabling NetworkManager and disabling SELINUX."
+systemctl stop NetworkManager ;
+systemctl disable NetworkManager ;
+NOW=$(date +"%m_%d_%Y-%H_%M_%S")
+cp /etc/selinux/config /etc/selinux/config.bckup.$NOW
+sed -i -e 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config ;
+log "NetworkManager stopped and disabled."
+echo "${WHITE}NetworkManager stopped and disabled."
+echo "${WHITE}Selinux Disabled."
+
+titulo "Enabling / Updating initial quotas! A reboot in the end will be required."
+yes |  /scripts/initquotas ;
+echo "${WHITE}Server quotas are enabled!"
+esperar "sleep 1" "${WHITE}Server quotas are enabled! "
+
+
 titulo "Atualizando a password..."
-echo 'Password+2024' | passwd --stdin root
-esperar "sleep 3" "${WHITE}Atualizando... "
+echo "${password}" | passwd --stdin root
+esperar "sleep 1" "${WHITE}Atualizando... "
 
-echo -e ""
-
-titulo 2 "Atualizando a porta ssh..."
+titulo "Atualizando a porta ssh..."
 echo -n "${MAGENTA}Enter SSH port to change from ${BLUE}${sshport}${MAGENTA}:${NORMAL} "
 while read SSHPORT; do
     if [[ "$SSHPORT" =~ ^[0-9]{2,5}$ || "$SSHPORT" = 22 ]]; then
@@ -14,7 +36,7 @@ while read SSHPORT; do
             NOW=$(date +"%m_%d_%Y-%H_%M_%S")
             cp /etc/ssh/sshd_config /etc/ssh/sshd_config.inst.bckup.$NOW
             sed -i -e "/Port /c\Port $SSHPORT" /etc/ssh/sshd_config
-            echo -e "${CYAN}Restarting SSH in 5 seconds. ${NORMAL}Please wait."
+            echo -e "${CYAN}Restarting SSH in 2 seconds. ${NORMAL}Please wait."
             sleep 2
             service sshd restart
             echo -e "\n${RED}The SSH port has been changed to $SSHPORT."

@@ -1,4 +1,12 @@
 function globais(){
+  password="password"
+  sshport="2022"
+  domain="encpro.pt"
+  hostname="srv.encpro.pt"
+  ns1="ns1.encpro.pt"
+  ns2="ns2.encpro.pt"
+  readonly ip="135.125.183.142"
+
   sshport="2022"
   version="1.0.0"
   WHITE="$(tput setaf 7)"
@@ -141,7 +149,7 @@ function esperar(){
   done
 
   echo -e "\b\\r${CHECK_MARK}${CINZA} Atualizado!   "
-
+echo -e ""
   #printf " \b\n"
   # Wait the command to be finished, this is needed to capture its exit status
   #wait $!
@@ -174,6 +182,22 @@ function cores() {
         echo "$i: `tput setaf $i`0123456789abcdef@`tput sgr0`"
         `tput setaf $i` 2>&1 | grep -Eo "\^\[\[[0-9]+m$"
     done
+}
+@confirm() {
+  local message="$*"
+  local result=3
+
+  echo -n "> $message (y/n) " >&2
+
+  while [[ $result -gt 1 ]] ; do
+    read -s -n 1 choice
+    case "$choice" in
+      y|Y ) result=0 ;;
+      n|N ) result=1 ;;
+    esac
+  done
+
+  return $result
 }
 countdown(){
   cdx(){
