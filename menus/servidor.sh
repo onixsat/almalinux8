@@ -13,7 +13,7 @@ source menus/servidor/config.sh
 
 function showIniciar(){
 	banner "Servidor" "Configuracão" "Iniciar"
-
+echo ${domain}
 	if @confirm 'Confirma que quer atualizar?' ; then
     source menus/servidor/iniciar.sh
   else

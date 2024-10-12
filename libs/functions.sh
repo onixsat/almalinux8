@@ -187,25 +187,22 @@ function proteger() {
       git clone https://github.com/nodesocket/cryptr.git
       ln -s "$PWD"/cryptr/cryptr.bash /usr/local/bin/cryptr
       bash cryptr/tools/cryptr-bash-completion.bash
-      esperar "sleep 1" "${WHITE}Instalado... "
+      esperar "sleep 10" "${WHITE}Instalado... "
     else
 
       file="config/config.sh.aes"
       if [[ ! -f "$file" && ! -s "$file" ]]; then
-          exit "oi"
+          cryptr/cryptr.bash encrypt config/config.sh
+          exit
       fi
 
-      # Criar o ficheiro config.sh
       cryptr/cryptr.bash decrypt config/config.sh.aes
 
       data=$(<config/config.sh)
       tmpfile="$(mktemp /tmp/myscript.XXXXXX)"
       cat <<< "$data" > "$tmpfile"
-     # cat "$tmpfile"
-      #sleep
           rm -f "config/config.sh"
           trap 'rm -f "$tmpfile"' SIGTERM SIGINT EXIT
-     # cat "$tmpfile"
       source "$tmpfile"
     fi
 }
