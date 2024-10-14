@@ -26,7 +26,8 @@ echo ${domain}
 
 function showInstalar(){
 	banner "Servidor" "Configuracão" "Instalar"
-	source scripts/iniciar.sh
+	echo "sem app"
+	#source scripts/iniciar.sh
 
 	reload "return" "menuServidor"
 	pause

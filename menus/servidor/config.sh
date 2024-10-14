@@ -76,8 +76,7 @@ addMenuItem "menuConfig2" "Go back" 'loadMenu "menuConfig"'
 mailMenu(){
 
 read -r -d '' ENV_CONFIG << EOM
-  Main Menu
-  - Configuracao Mail
+  Menu ${BLUE}Servidor - ${BOLD}${RED}Mail${NORMAL}
 EOM
 
 createMenu "menuConfig3" "$ENV_CONFIG"
@@ -169,7 +168,7 @@ fi
     }
 
 nameserver=("8.8.8.8" "8.8.4.4")
-srv="srv.encpro.pt"
+srv="srv.${domain}"
 	hn=$(/bin/hostname)
 	#hn=$(hostname -f)
 	#hn="vps-98e038c0.vps.ovh.net"
@@ -213,9 +212,9 @@ function showMailip() {
 
 
         touch $TARGET_FILE
-        echo 'encpro.pt: 141.95.110.219' > $TARGET_FILE
-        echo 'mail.encpro.pt: 141.95.110.219' >> $TARGET_FILE
-        echo '*: 54.38.191.102' >> $TARGET_FILE
+        echo "${domain}: 141.95.110.219" > $TARGET_FILE
+        echo "mail.${domain}: 141.95.110.219" >> $TARGET_FILE
+        echo "*: ${ip}" >> $TARGET_FILE
 
         reload "return" "menuConfig3"
         pause
@@ -241,9 +240,9 @@ function showMailhelo() {
 
 
         touch $TARGET_FILE
-        echo 'encpro.pt: mail.encpro.pt' > $TARGET_FILE
-        echo 'mail.encpro.pt: mail.encpro.pt' >> $TARGET_FILE
-        echo '*: srv.encpro.pt' >> $TARGET_FILE
+        echo "${domain}: mail.${domain}" > $TARGET_FILE
+        echo "mail.${domain}: mail.${domain}" >> $TARGET_FILE
+        echo "*: srv.${domain}" >> $TARGET_FILE
 
         reload "return" "menuConfig3"
         pause

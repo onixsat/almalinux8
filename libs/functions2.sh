@@ -328,20 +328,82 @@ function proteger() {
 
       file="config/config.sh.aes"
       if [[ ! -f "$file" && ! -s "$file" ]]; then
+           # read -e -p "${MAGENTA}Senha:${NORMAL} " -i "12345" word
+PET=$(whiptail --title "Test Free-form Input Box" --inputbox "What is your pet's name?" 10 60 Wigglebutt 3>&1 1>&2 2>&3)
 
-          word=$(whiptail --title "Password" --passwordbox "senha?" 10 60 "12345" 3>&1 1>&2 2>&3)
-          exitstatus=$?
-          if [ $exitstatus = 0 ]; then
-              decrypt config/config.sh.enc ${word}
-              esperar "sleep 5" "${WHITE}decrypt config/config.sh.enc... "
-              cryptr/cryptr.bash encrypt config/config.sh
-              esperar "sleep 5" "${WHITE}cryptr/cryptr.bash encrypt config/config.sh... "
-              #sleep 5
-              #exit
-          else
-              echo "You chose Cancel."
-          fi
+exitstatus=$?
+if [ $exitstatus = 0 ]; then
+    echo "Your pet name is:" $PET
+else
+    echo "You chose Cancel."
+fi
 
+
+#!/bin/bash
+# yesnobox.sh - An inputbox demon shell script
+OUTPUT="/tmp/input.txt"
+# create empty file
+>$OUTPUT
+# Purpose - say hello to user
+#  $1 -> name (set default to 'anonymous person')
+function sayhello(){
+	local n=${@-"anonymous person"}
+	#display it
+	dialog --title "Hello" --clear --msgbox "Hello ${n}, let us be friends!" 10 41
+}
+# cleanup  - add a trap that will remove $OUTPUT
+# if any of the signals - SIGHUP SIGINT SIGTERM it received.
+trap "rm $OUTPUT; exit" SIGHUP SIGINT SIGTERM
+# show an inputbox
+dialog --title "Inputbox - To take input from you" \
+--backtitle "Linux Shell Script Tutorial Example" \
+--inputbox "Enter your name " 8 60 2>$OUTPUT
+# get respose
+respose=$?
+# get data stored in $OUPUT using input redirection
+name=$(<$OUTPUT)
+# make a decsion
+case $respose in
+  0)
+  	sayhello ${name}
+  	;;
+  1)
+  	echo "Cancel pressed."
+  	;;
+  255)
+   echo "[ESC] key pressed."
+esac
+# remove $OUTPUT file
+rm $OUTPUT
+
+
+
+
+
+echo "kkk"
+sleep 40
+
+
+function display_output(){
+local h=${1-10}                 # box height default 10
+local w=${2-41}                 # box width default 41
+local t=${3-Output}     # box title
+  dialog --clear --backtitle "Descodificar ficheiro" --title "${t}" --inputbox "${SYMBOL} $(<$OUTPUT)" ${h} ${w} 3>&1 1>&2 2>&3
+#  dialog --backtitle "tt1" --title "tt2" --inputbox "${SYMBOL} $1" "$RECMD_LINES" "$RECMD_COLS" "oi"
+}
+display_output 8 60 "Password"
+echo "oi"
+sleep 5
+           answer=$( dialog --clear --backtitle "Proteger" --title "Encryptar" --inputbox "${SYMBOL} $1" "6" "60" "$2"3>&1 1>&2 2>&3)
+             echo $answer
+
+           #source libs/boxs.sh
+echo "oi"
+sleep 20
+          decrypt config/config.sh.enc ${word}
+
+          cryptr/cryptr.bash encrypt config/config.sh
+          exit
       fi
 
       cryptr/cryptr.bash decrypt config/config.sh.aes
