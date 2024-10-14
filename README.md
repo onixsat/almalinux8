@@ -1,7 +1,7 @@
 __Bash Almalinux 8__ 
-- __[SSH](https://nodeca.github.io/pica/demo/)__ - centos \
+- __[SSH](https://nodeca.github.io/pica/demo/)__ - almalinux \
 *CanTArDq5ZrM*\
-*Onixsat2024*
+*Senha+2024*
 
 
 ---

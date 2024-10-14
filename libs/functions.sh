@@ -175,6 +175,140 @@ function cores() {
         `tput setaf $i` 2>&1 | grep -Eo "\^\[\[[0-9]+m$"
     done
 }
+function encrypt() {
+    # bash libs/encrypt.sh config/config.sh 12345 delete
+
+    FILE=$1
+    PASSPHRASE=$2
+    SECURE_DELETE=$3
+    ENCRYPTED_FILE="${FILE}.enc"
+
+    # Encrypt the file
+    openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 -in "$FILE" -out "$ENCRYPTED_FILE" -pass pass:"$PASSPHRASE"
+
+    if [ $? -eq 0 ]; then
+        echo "File encrypted successfully: $ENCRYPTED_FILE"
+    else
+        echo "Encryption failed"
+        exit 1
+    fi
+
+    # Securely delete the original file if requested
+    if [ "$SECURE_DELETE" = "delete" ]; then
+        # Overwrite the file with random data
+        openssl rand -out "$FILE" $(stat --format=%s "$FILE")
+        # Optionally, overwrite multiple times for extra security
+
+        # Remove the file
+        rm -f "$FILE"
+
+        if [ $? -eq 0 ]; then
+            echo "Original file securely deleted."
+        else
+            echo "Failed to securely delete the original file."
+            exit 1
+        fi
+    fi
+}
+function decrypt() {
+    #bash libs/decrypt.sh config/config.sh.enc 12345
+    if [ "$#" -ne 2 ]; then
+        echo "Usage: $0 <file to decrypt> <passphrase>"
+        exit 1
+    fi
+
+    ENCRYPTED_FILE=$1
+    PASSPHRASE=$2
+    DECRYPTED_FILE="${ENCRYPTED_FILE%.enc}"
+
+    # Decrypt the file with PBKDF2 and the specified number of iterations
+    openssl enc -aes-256-cbc -d -salt -pbkdf2 -iter 10000 -in "$ENCRYPTED_FILE" -out "$DECRYPTED_FILE" -pass pass:"$PASSPHRASE"
+
+    if [ $? -eq 0 ]; then
+        echo "File decrypted successfully: $DECRYPTED_FILE"
+    else
+        echo "Decryption failed"
+        exit 1
+    fi
+}
+function configs() {
+
+    #!/bin/bash
+    SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+    #GUI=false; terminal=false # force relaunching as if launching from GUI without a GUI interface installed, but only do this for testing
+    #NOSYMBOLS=true
+    #NOCOLORS=true
+    source "${SCRIPT_DIR}"/libs/dialog.sh
+
+    relaunch-if-not-visible
+    APP_NAME="Configuração"
+
+    ACTIVITY="Inquiry"
+    yesno "Deseja configurar?";
+    ANSWER=$?
+
+    ACTIVITY="Response"
+    if [ $ANSWER -eq 0 ]; then
+      message-info "Vamos configurar."
+    else
+      message-warn "Terminado."
+      exit
+    fi
+     password="Password+2024"
+      sshport="2022"
+      domain="encpro.pt"
+      hostname="srv.encpro.pt"
+      ns1="ns1.encpro.pt"
+      ns2="ns2.encpro.pt"
+      ip="135.125.183.142"
+
+    ACTIVITY="Config"
+    password=$(inputbox "What's your password?" "$password")
+    sshport=$(inputbox "What's your sshport?" "$sshport")
+    domain=$(inputbox "What's your domain?" "$domain")
+    hostname=$(inputbox "What's your hostname?" "$hostname")
+    ns1=$(inputbox "What's your ns1?" "$ns1")
+    ns2=$(inputbox "What's your ns2?" "$ns2")
+    ip=$(inputbox "What's your ip?" "$ip")
+
+
+
+    #$"Salvo:\n password: $password\n sshport: $sshport\n domain: $domain\n hostname: $hostname\n ns1: $ns1\n ns2: $ns2\n ip: $ip"
+
+    ACTIVITY="Guardando..."
+    {
+    exec 3<> config/config.sh
+
+        echo "#!/usr/bin/env bash" >&3
+        echo "password='$password'" >&3
+        echo "sshport='$sshport'" >&3
+        echo "domain='$domain'" >&3
+        echo "hostname='$hostname'" >&3
+        echo "ns1='$ns1'" >&3
+        echo "ns2='$ns2'" >&3
+        echo "ip='$ip'" >&3
+
+    exec 3>&-
+
+      for ((i = 0 ; i <= 100 ; i+=5)); do
+        # optional text during progress
+        echo "1"
+        if [[ "$((RANDOM % 2))" == "1" ]]; then
+          SUB_ACTIVITY="Salvando..."
+        else
+          SUB_ACTIVITY=""
+        fi
+
+        progressbar_update "$i" "$SUB_ACTIVITY"
+        sleep 0.2
+      done
+      progressbar_finish
+    } | progressbar "$@"
+
+    message-info "Salvo!"
+
+}
 function proteger() {
 
     # https://github.com/nodesocket/cryptr
@@ -192,6 +326,7 @@ function proteger() {
 
       file="config/config.sh.aes"
       if [[ ! -f "$file" && ! -s "$file" ]]; then
+        configs
           cryptr/cryptr.bash encrypt config/config.sh
           exit
       fi
