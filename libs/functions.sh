@@ -176,8 +176,7 @@ function cores() {
     done
 }
 function encrypt() {
-    # bash libs/encrypt.sh config/config.sh 12345 delete
-
+    # encrypt config/config.sh 12345 delete
     FILE=$1
     PASSPHRASE=$2
     SECURE_DELETE=$3
@@ -311,6 +310,7 @@ function configs() {
     message-info "Salvo!"
 
 }
+
 function proteger() {
  globais
     # https://github.com/nodesocket/cryptr

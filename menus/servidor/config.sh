@@ -89,7 +89,6 @@ addMenuItem "menuConfig3" "Go back" 'loadMenu "menuConfig"'
     loadMenu "menuConfig3"
 
 }
-
 function outer() {
 
 	Pre() {
@@ -191,7 +190,6 @@ srv="srv.${domain}"
 
 	  pause
 }
-
 function showMailip() {
         echo "Mailip!"
 
@@ -212,14 +210,13 @@ function showMailip() {
 
 
         touch $TARGET_FILE
-        echo "${domain}: 141.95.110.219" > $TARGET_FILE
-        echo "mail.${domain}: 141.95.110.219" >> $TARGET_FILE
-        echo "*: ${ip}" >> $TARGET_FILE
+        echo "${domain}: ${ip}" > $TARGET_FILE
+        echo "mail.${domain}: ${ip}" >> $TARGET_FILE
+        echo "*: ${dns}" >> $TARGET_FILE
 
         reload "return" "menuConfig3"
         pause
 }
-
 function showMailhelo() {
         echo "Mailhelo!"
 
@@ -247,7 +244,6 @@ function showMailhelo() {
         reload "return" "menuConfig3"
         pause
 }
-
 function showMailUpdate(){
     local ret_val=nothing
     echo $ret_val
@@ -257,7 +253,7 @@ function showMailUpdate(){
     echo $ret_val
 
 
-y='141.95.110.219'
+y="${ip}"
 x='XYZ'
 sed -i -e 's/$x/$y/g' /etc/mailips
 #or,
@@ -265,8 +261,6 @@ sed -i -e "s/$x/$y/g" /etc/mailips
 
 pause
 }
-
-
 
 func1(){
 ret_val="f1"
