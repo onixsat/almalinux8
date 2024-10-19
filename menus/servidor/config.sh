@@ -74,6 +74,40 @@ addMenuItem "menuConfig2" "Go back" 'loadMenu "menuConfig"'
 	pause
 }
 mailMenu(){
+whiptail --title "Configurar na OVH" --msgbox "135.125.183.142 srv.encpro.pt. \n141.95.110.219 mail.encpro.pt." 8 78
+whiptail \
+    --backtitle "Cloudflare" \
+    --title "Configurar na Cloudflare" \
+    --textbox "scripts/cloudflare.txt" 36 96 \
+    --scrolltext
+
+
+
+setHostname() {
+		whiptail --msgbox
+	"Please note:\n\n \
+	\nhostname's labels may contain only the ASCII letters from 'a' to 'z' (case-insensitive), the digits from '0' to '9', and the hypen '-'.\
+	\nHostname labels cannot begin or end with a hypen '-'. \
+	\nNO OTHER SYMBOLS, punctuation characters, or blank spaces are permitted.\
+		" 20 70 1
+		CURRENT_HOSTNAME=`cat /etc/hostname | tr -d " \t\n\r"`
+		NEW_HOSTNAME=$(whiptail --inputbox "Please enter a hostname" 20 60 "$CURRENT_HOSTNAME" 3>&1 1>&2 2>&3)
+
+		if [ $? -eq 0 ];
+		then
+			echo $NEW_HOSTNAME > /etc/hostname
+			sudo sed -i "s/127.0.0.1.*$CURRENT_HOSTNAME/127.0.0.1\t$NEW_HOSTNAME/g" /etc/hosts
+
+			if [ $? -eq 0 ]; then
+				whiptail --msgbox "Hostname changed succesfull." 20 70 1
+			else
+				whiptail --msgbox "Something went wrong. Try again." 20 70 1
+			fi
+		fi
+		goToMainMenu
+	}
+setHostname
+
 
 read -r -d '' ENV_CONFIG << EOM
   Menu ${BLUE}Servidor - ${BOLD}${RED}Mail${NORMAL}
