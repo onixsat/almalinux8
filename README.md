@@ -1,4 +1,4 @@
-<style>
+
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 
@@ -123,7 +123,9 @@ body{font-size:16px;}
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
-</style>
+
+
+
 __Bash Almalinux 8__
 ---
 ___
