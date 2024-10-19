@@ -1,19 +1,27 @@
-__Bash Almalinux 8__ 
-- __[SSH](https://nodeca.github.io/pica/demo/)__ - almalinux \
-*CanTArDq5ZrM*\
-*Senha+2024*
+__Bash Almalinux 8__
+---
+___
 
+<h5 style="height:0px">Configuração</h5>
+<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+
+---
+Continuar...
 
 ---
 ## recursive WP file & folder permissions fix
-find /home/*/public_html -type d -exec chmod 755 {} \;
+find /home/*/public_html -type d -exec chmod 755 {} \;\
 find /home/*/public_html -type f -exec chmod 644 {} \;
 
-## ownership swapping
-# nobody : SYS account
-# project : FTP account
-chown -R nobody /home/project/
+
+chown -R nobody /home/project/ \
 chown -R project /home/project/
+
+
+
+
+
 
 
 Primeiro

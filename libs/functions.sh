@@ -308,7 +308,7 @@ function proteger(){
           esperar "sleep 5" "${WHITE}Terminando..." "Configurado!"
     exit 0
   else
-    word=$(whiptail --title "Password" --passwordbox "senha?" 10 60 "12345" 3>&1 1>&2 2>&3)
+    word=$(whiptail --title "Password" --passwordbox "Qual a senha de proteção?" 10 60 "12345" 3>&1 1>&2 2>&3)
     exitstatus=$?
 
     if [ $exitstatus = 0 ]; then

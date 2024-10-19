@@ -5,20 +5,12 @@ read -r -d '' ENV_VAR_MENU << EOM
   ${BLUE}Menu Cpanel - ${BOLD}${RED}Configuracão${NORMAL}
 EOM
 createMenu "menuCpanel" "$ENV_VAR_MENU"
-addMenuItem "menuCpanel" "Um" showUm
-addMenuItem "menuCpanel" "Dois" showDois
+addMenuItem "menuCpanel" "Sub Menu" showSubmenu
 
-function showUm(){
+function showSubmenu(){
 	source config/submenus.sh
 	sub-menu "menuCpanel"
   reload "return" "menuCpanel"
 	pause
 }
 
-function showDois(){
-	echo "sub"
-	sleep 5
-	clear
-  source config/novo.sh
-	pause
-}
