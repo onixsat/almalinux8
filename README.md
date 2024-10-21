@@ -1,5 +1,6 @@
 <h1 align="center">Bash Almalinux 8</h1>
 
+
 <!-- CONFIGURAÇÃO -->
 ## Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
