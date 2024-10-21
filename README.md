@@ -1,22 +1,16 @@
 <h1 align="center">Bash Almalinux 8</h1>
 
----
-___
-
 <!-- CONFIGURAÇÃO -->
 ## Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
----
 <!-- códigos -->
 ## Códigos
 * Códigos gerais para shell
 
 ### Servidor
-
 * Proteger alteração de ficheiros
-
 ```bash
 chattr -i /etc/mailips
 chattr -i /etc/mailhelo
