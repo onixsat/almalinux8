@@ -1,6 +1,6 @@
 ---
 # src/index.liquid
-title: "11ty-2289"
+title: "ok"
 ---
 <h1>{{ title }}</h1>
 
