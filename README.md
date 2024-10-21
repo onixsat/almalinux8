@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/onixsat">
-    <img src="[logo1]" alt="Logo" width="80" height="80">
+    <img src="[var0]" alt="Logo" width="80" height="80">
   </a>
 
   
@@ -67,7 +67,7 @@ Or leave it empty and use the [logo]
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: https://github.com/othneildrew/Best-README-Template/blob/main/images/screenshot.png?raw=true
 [logo]: https://github.com/othneildrew/Best-README-Template/blob/main/images/logo.png?raw=true
-[var0]: https://example.org
+[var0]: https://example.org](https://github.com/othneildrew/Best-README-Template/blob/main/images/logo.png
 [var1]: https://example.org
 ![logo1](https://github.com/othneildrew/Best-README-Template/blob/main/images/logo.png?raw=true)
 
