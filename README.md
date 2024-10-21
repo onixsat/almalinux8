@@ -1,6 +1,15 @@
 <h1 align="center">Bash Almalinux 8</h1>
 <h6 align="center"></h6>
+---
+title: New Issue
+labels: bug, enhancement
+---
+<!--#
+NOUN=mother
+ATTRIBUTION=Mark Wahlberg
+$-->
 
+"Say hi to your {{ NOUN }} for me," {{ ATTRIBUTION }}
 <!-- CONFIGURAÇÃO -->
 ## Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
