@@ -1,31 +1,64 @@
-__Bash Almalinux 8__
----
-___
+<h1 align="center">Bash Almalinux 8</h1>
+<p align="center">💻 Linguagens de Programação</p>
 
-<h5 style="height:0px">Configuração</h5>
+## 🚀 Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
 ---
+
+## 🛠️ Códigos
+* Códigos gerais para shell
+
+### Servidor
+
+* Proteger alteração de ficheiros
+
+```bash
+chattr -i /etc/mailips
+chattr -i /etc/mailhelo
+
+chattr +i /etc/mailips
+chattr +i /etc/mailhelo
+```
+---
+
+* Outros
+
+```bash
+banner "Apache" "Configuracão" "Password"
+titulo "Atualizando o sistema..."
+
+declare -A myArray
+  myArray[A]="yum update -y"
+  myArray[B]="hostname>h.txt"
+  
+dados=$(jstrings ' && ' "${myArray[@]}")
+esperar "$dados" "${WHITE}Atualizando..." "Atualizado!"
+```
+
+* Carregar
+```bash
+function carregar(){
+  start_time2=$(date +%s%3N)
+  start_loading "Carregando..."
+  sleep 5
+  stop_loading $?
+  end_time2=$(date +%s%3N)
+  duration_ms2=$((end_time2 - start_time2))
+  echo "Execution: $duration_ms2"
+}
+
+esperar carregar "${WHITE}Carregando..." "Carregado!"
+```
+---
+
+* Outros
+📫 Contato
+----
 Continuar...
-<p align="center">
-  <img src="https://raw.githubusercontent.com/matfantinel/matfantinel/master/logo.svg" width="300" height="100">
-</p>	
-<img src="https://raw.githubusercontent.com/matfantinel/matfantinel/master/waves.svg" width="100%" height="150">
 
-# Hello! 👋️
-![](https://komarev.com/ghpvc/?username=matfantinel&color=0ca4a5)
-
-I am a software engineer from Brazil. My deal is building fast, beautiful and high-quality web apps, but I have also worked on mobile and desktop apps (it was pretty fun!). Whenever possible, I work with Open Source Software (OSS). You can check out my OSS projects here on GitHub.
-
-Also, feel free to check what I've been rambling about on <a href="https://fantinel.dev" target="_blank">my blog</a>.
-
-<ul>
-<li>Front-End Web Developer</li>
-<li>Open Sourcerer</li>
-<li>Bullet List Enthusiast</li>
-</ul>
-
+<br>
 ---
 ## recursive WP file & folder permissions fix
 find /home/*/public_html -type d -exec chmod 755 {} \;\
