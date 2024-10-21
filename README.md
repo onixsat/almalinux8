@@ -1,21 +1,27 @@
 <h1 align="center">Bash Almalinux 8</h1>
 <h6 align="center"></h6>
+
+
+## Testing
+
+This action is best used with issue templates. Create an example `.github/ISSUE_TEMPLATE.md` file. This file should have front matter to help construct the new issue:
+
+```markdown
 ---
 title: New Issue
 labels: bug, enhancement
 ---
-___
-___
-<br>
 <!--#
 NOUN=mother
 ATTRIBUTION=Mark Wahlberg
 $-->
-<br>
-___
-___
 
 "Say hi to your {{ NOUN }} for me," {{ ATTRIBUTION }}
+```
+
+You'll notice that the above example has some `{{ MUSTACHE }}` variables. This is needed for the API to find and replace variables. This is powered by the [marky_markdown](https://rubygems.org/gems/marky_markdown) ruby gem.
+
+
 <!-- CONFIGURAÇÃO -->
 ## Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
