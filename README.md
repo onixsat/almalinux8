@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/onixsat">
-    <img src="[logo]" alt="Logo" width="80" height="80">
+    <img src="scripts/logo.png" alt="Logo" width="80" height="80">
   </a>
 </div>
 
@@ -38,7 +38,7 @@
 </details>
 
 
-<a href="https://www.example.com/my great page">link ou [link]</a>
+<a href="https://www.example.com/">link ou [logo]</a>
 
 [logo]: scripts/logo.png
 [link]: (https://www.example.com/my%20great%20page)
