@@ -38,10 +38,10 @@
 </details>
 
 
-<a href="https://www.example.com/">link ou [link]</a>
+<a href="[logo]">[link]</a>
 
 [logo]: scripts/logo.png
-[link]: (https://www.example.com/my%20great%20page)
+[link](https://www.example.com/my%20great%20page)
 
 ### Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
