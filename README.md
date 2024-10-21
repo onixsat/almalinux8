@@ -1,11 +1,12 @@
-#include "about.md"
-
+---
+# include "src/about.md"
+---
+---
 {{about.md}}
-
-[[Epigenetics]]
+---
+---
 @import "about.md"
-<script src="/markdown-it.min.js"></script>
-<script src="/jquery-3.5.1.min.js"></script>
+---
 
 <script> 
   $(function() {
