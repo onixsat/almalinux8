@@ -16,9 +16,9 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Códigos">Códigost</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Servidor">Servidor</a></li>
       </ul>
     </li>
     <li>
@@ -91,7 +91,7 @@ esperar carregar "${WHITE}Carregando..." "Carregado!"
 ```
 
 * Outros
- Contato
+  Contato
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -122,7 +122,7 @@ bash btk.sh
 wget https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/iniciar.sh -O ./iniciar.sh && bash iniciar.sh
 ```
 -----------------------------------
- sudo chmod +x ~/virtualhost
+sudo chmod +x ~/virtualhost
 https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/install_cpanel.sh
 
 echo "Install php..."
@@ -154,23 +154,23 @@ yum install nginx
     nano /etc/hostname 
     ping onixsat.line.pm
     ifconfig
-   ip addr show enp0s3 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
-   sudo systemctl enable httpd.service
-   sudo yum install mariadb-server
-   sudo systemctl start mariadb
-   sudo systemctl enable mariadb.service
-   sudo systemctl status mariadb
-   sudo yum install php php-mysql
-   sudo systemctl restart httpd.service
-   php -v
-   sudo chown -R root.root /var/www/html/ #sammy is exmple. user 
-   
+ip addr show enp0s3 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+sudo systemctl enable httpd.service
+sudo yum install mariadb-server
+sudo systemctl start mariadb
+sudo systemctl enable mariadb.service
+sudo systemctl status mariadb
+sudo yum install php php-mysql
+sudo systemctl restart httpd.service
+php -v
+sudo chown -R root.root /var/www/html/ #sammy is exmple. user
+
 nano /var/www/html/nano a.sh
-bash a.sh 
- ip addr
-  cd /var/www/html/
-  nano index.php 
- 
+bash a.sh
+ip addr
+cd /var/www/html/
+nano index.php
+
 
 ---------------------- TERCEIRO
 
