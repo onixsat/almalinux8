@@ -1,7 +1,15 @@
-{% renderFile "./about.md" %}
-{#  works much better than #}
-{% include "about.md" %}
+---
+# src/index.liquid
+title: "11ty-2289"
+---
 
+<h1>{{ title }}</h1>
+
+{% renderFile "about.md" %}
+
+<footer>
+  <p>&copy; 2099</p>
+</footer>
 
 <h1 align="center">Bash Almalinux 8</h1>
 <h6 align="center">💻 Linguagens de Programação</h6>
