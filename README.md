@@ -16,7 +16,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Códigos">Códigost</a>
+      <a href="#Códigos">Códigos</a>
       <ul>
         <li><a href="#Servidor">Servidor</a></li>
       </ul>
@@ -36,12 +36,6 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
-
-<a href="[link]">[link]</a>
-
-[logo]: scripts/logo.png
-[link](https://www.example.com/my%20great%20page "lol")
 
 ### Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
@@ -219,3 +213,7 @@ systemctl enable iptables
 systemctl restart iptables
 
 🚀🛠️📫
+<a href="[link]">[link]</a>
+
+[logo]: scripts/logo.png
+[link](https://www.example.com/my%20great%20page "lol")
