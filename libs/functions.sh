@@ -164,7 +164,7 @@ function titulo(){
     titulo=$2
   fi
 
-  echo "${BLUE}${titulo}${NORMAL}"
+  echo -e "\n${BLUE}${titulo}${NORMAL}"
 
   tput init
 }
@@ -174,6 +174,13 @@ function cores() {
         echo "$i: `tput setaf $i`0123456789abcdef@`tput sgr0`"
         `tput setaf $i` 2>&1 | grep -Eo "\^\[\[[0-9]+m$"
     done
+}
+function jstrings(){
+declare separator="$1";
+declare -a args=("${@:2}");
+declare result;
+printf -v result '%s' "${args[@]/#/$separator}";
+printf '%s' "${result:${#separator}}"
 }
 
 function draw_spinner(){
@@ -321,7 +328,7 @@ function proteger(){
       trap 'rm -f "$tmpfile"' SIGTERM SIGINT EXIT
       source "$tmpfile"
       esperar "sleep 0" "${WHITE}Criando $tmpfile..." "Criado o $tmpfile"
-      esperar "sleep 5" "${WHITE}Carregando o sistema..." "Carregado!"
+      esperar "sleep 0" "${WHITE}Carregando o sistema..." "Carregado!"
       clear
       return 0
     else
@@ -422,6 +429,39 @@ all(){
     tput sgr0 # Restaurar o formato de texto para o padrão do terminal
     tput bel # Emitir um sinal sonoro
   }
+  join_strings () {
+      declare separator="$1";
+      declare -a args=("${@:2}");
+      declare result;
+      printf -v result '%s' "${args[@]/#/$separator}";
+      printf '%s' "${result:${#separator}}"
+  }
+  join_strings ' && ' "1" "2" "3"
+
+  function joinArray() {
+    local delimiter="${1}"
+    local output="${2}"
+    for param in ${@:3}; do
+      output="${output}${delimiter}${param}"
+    done
+
+    echo "${output}"
+  }
+  joinArray ' && ' "1" "2" "3"
+
+
+
+    declare -A myArray
+    myArray[A]="1x"
+    myArray[B]="ax"
+
+for i in ${!myArray[@]}; do
+  echo "element $i is ${myArray[$i]}"
+done
+
+oi=$(joinArray ' && ' "${myArray[@]}")
+echo "oi $oi"
+
 }
 ver(){
 #!/usr/bin/env bash

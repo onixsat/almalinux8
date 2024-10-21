@@ -78,7 +78,6 @@ function stop_spinner {
 menu=(
 "Update"
 "Password"
-"Config1"
 "Process Stats"
 "Network Stats"
 "Disk Stats"
@@ -191,16 +190,36 @@ function sub-menu {
 
                                           titulo "Atualizando o sistema..."
 
+                                          function joinArray() {
+                                              local delimiter="${1}"
+                                              local output="${2}"
+                                              for param in ${@:3}; do
+                                                output="${output}${delimiter}${param}"
+                                              done
+
+                                              return "${output}"
+                                          }
+                                           join_strings () {
+                                                declare separator="$1";
+                                                declare -a args=("${@:2}");
+                                                declare result;
+                                                printf -v result '%s' "${args[@]/#/$separator}";
+                                                printf '%s' "${result:${#separator}}"
+                                            }
 
                                           declare -A myArray
-                                            myArray[A]="yum update -y"
-                                            myArray[B]="yum upgrade -y"
+                                            myArray[A]="yum update -y >> x1.txt"
+                                            myArray[B]="ls config/ >> x1.txt"
+                                            myArray[C]="yum upgrade -y >> x1.txt"
+                                            myArray[D]="ip addr >> x1.txt"
 
-                                          dados=$(jstrings ' && ' "${myArray[@]}")
+                                          dados=$(join_strings ' && ' "${myArray[@]}")
                                           #echo $dados >> dados.txt
-                                          esperar "$dados" "${WHITE}Atualizando..." "Atualizado!"
+                                          esperar "$dados >> x2.txt" "${WHITE}Atualizando... " "Atualizado!"
 
-                                          function app1(){
+
+
+                                        function app1(){
 #                                          start_time2=$(date +%s%3N)
 
                                            start_loading "Atualizando..."
@@ -215,47 +234,16 @@ function sub-menu {
 #                                          duration_ms2=$((end_time2 - start_time2))
 #                                          echo "Execution: $duration_ms2"
                                         }
-                                          #esperar app1 "${WHITE}Atualizando... " "Atualizado!" >> a2.txt
+
+#app1
+  #                                       # esperar "sleep 0" "${WHITE}Atualizando... " "Atualizado!"
+                                          esperar app1 "${WHITE}Atualizando... " "Atualizado!" >> a2.txt
 
                                       elif [ "$line" == "Password" ]
                                       then
-                                          banner "Apache" "Configuracão" "Password"
                                           titulo "Atualizando a password..."
-
-                                          word=$(whiptail --title "Password root" --passwordbox "Nova password?" 10 60 "${password}" 3>&1 1>&2 2>&3)
-                                          exitstatus=$?
-                                          if [ $exitstatus = 0 ]; then
-                                            esperar "${word} | passwd --stdin root" "${WHITE}Atualizando..." "Atualizado"
-                                            return 0
-                                          else
-                                            echo "Cancelou a operação."
-                                            return 0
-                                          fi
-
-
-                                      elif [ "$line" == "Config1" ]
-                                      then
-                                          titulo "Stopping and disabling NetworkManager and disabling SELINUX."
-                                          declare -A myArray
-                                            myArray[A]="systemctl stop NetworkManager"
-                                            myArray[B]="disable NetworkManager"
-                                          dados=$(jstrings ' && ' "${myArray[@]}")
-                                          esperar "$dados" "${WHITE}Atualizando..." "NetworkManager stopped and disabled"
-
-                                          declare -A myArray
-                                            NOW=$(date +"%m_%d_%Y-%H_%M_%S")
-                                            myArray[A]="cp /etc/selinux/config /etc/selinux/config.bckup.$NOW"
-                                            myArray[B]="sed -i -e 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config"
-                                          esperar "$dados" "${WHITE}Atualizando..." "Selinux isabled"
-
-                                          titulo "Enabling / Updating initial quotas! A reboot in the end will be required."
-                                          esperar "yes | /scripts/initquotas" "${WHITE}Habilitando" "Server quotas are enabled"
-
-
-
-
-
-
+                                          echo "${password}" | passwd --stdin root
+                                          esperar "sleep 1" "${WHITE}Atualizando... "
                                       elif [ "$line" == "Process Stats" ]
                                           then
                                           ps=$(ps -Ao comm,user,cputime,pcpu,pmem,sz,rss,vsz,nlwp,psr,pri,ni)

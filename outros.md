@@ -36,16 +36,8 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
-### 🚀 Configuração
-<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<br>
+ 
+🚀 Outros
 ---
 ## recursive WP file & folder permissions fix
 find /home/*/public_html -type d -exec chmod 755 {} \;\
@@ -173,3 +165,5 @@ systemctl restart iptables
 
 [logo]: scripts/logo.png
 [link](https://www.example.com/my%20great%20page "lol")
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
