@@ -1,3 +1,8 @@
+{% renderFile "./about.md" %}
+{#  works much better than #}
+{% include "about.md" %}
+
+
 <h1 align="center">Bash Almalinux 8</h1>
 <h6 align="center">💻 Linguagens de Programação</h6>
 
