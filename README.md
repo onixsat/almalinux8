@@ -6,7 +6,9 @@ title: "11ty-2289"
 <h1>{{ title }}</h1>
 <!-- ./about.md -->
 <!-- .about.md -->
-<!-- about.md -->
+---
+# about.md
+---
 {% renderFile "about.md" %}
 
 <footer>
