@@ -1,20 +1,14 @@
 <h1 align="center">Bash Almalinux 8</h1>
-<p align="center">💻 Linguagens de Programação</p>
+<h6 align="center">💻 Linguagens de Programação</h6>
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-
-## 🚀 Configuração
+<!-- CONFIGURAÇÃO -->
+## Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
 ---
-
-## 🛠️ Códigos
+<!-- códigos -->
+## Códigos
 * Códigos gerais para shell
 
 ### Servidor
@@ -61,7 +55,7 @@ esperar carregar "${WHITE}Carregando..." "Carregado!"
 ---
 
 * Outros
-📫 Contato
+ Contato
 ----
 Continuar...
 
@@ -187,3 +181,4 @@ A INPUT -m state --state NEW -m tcp -p tcp --match multiport --dports 80,443,330
 
 systemctl enable iptables
 systemctl restart iptables
+🚀🛠️📫
