@@ -10,6 +10,19 @@
     <img src="[logo]" alt="Logo" width="80" height="80">
   </a>
 
+  
+Here is the [first link][var1]
+[var1]: https://example.org
+
+<script type="application/javascript">
+    title = "Document Title"
+</script>
+
+# **<script>document.write(title)</script>**
+
+The content of <script>document.write(title)</script> is a document outlining blah blah blah (see? it works in a body context, too).
+
+
 [I'm an inline-style link with title](https://www.somewebsite.com "somewebsite's Homepage")
 Or leave it empty and use the [logo]
 
