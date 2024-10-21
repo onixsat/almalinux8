@@ -1,51 +1,14 @@
-<h1 align="center">Bash Almalinux 8</h1>
-<h6 align="center">💻 Linguagens de Programação</h6>
+__Bash Almalinux 8__
+---
+___
 
-<a id="readme-top"></a>
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/onixsat">
-    <img src="scripts/logo.png" alt="Logo" width="80" height="80">
-  </a>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#Códigos">Códigos</a>
-      <ul>
-        <li><a href="#Servidor">Servidor</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-### 🚀 Configuração
+<h5 style="height:0px">Configuração</h5>
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
+---
+Continuar...
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<br>
 ---
 ## recursive WP file & folder permissions fix
 find /home/*/public_html -type d -exec chmod 755 {} \;\
@@ -55,7 +18,13 @@ find /home/*/public_html -type f -exec chmod 644 {} \;
 chown -R nobody /home/project/ \
 chown -R project /home/project/
 
-# Primeiro
+
+
+
+
+
+
+Primeiro
 
 ``` Iniciar
 cd /home
@@ -66,7 +35,7 @@ bash btk.sh
 wget https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/iniciar.sh -O ./iniciar.sh && bash iniciar.sh
 ```
 -----------------------------------
-sudo chmod +x ~/virtualhost
+ sudo chmod +x ~/virtualhost
 https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/install_cpanel.sh
 
 echo "Install php..."
@@ -98,23 +67,23 @@ yum install nginx
     nano /etc/hostname 
     ping onixsat.line.pm
     ifconfig
-ip addr show enp0s3 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
-sudo systemctl enable httpd.service
-sudo yum install mariadb-server
-sudo systemctl start mariadb
-sudo systemctl enable mariadb.service
-sudo systemctl status mariadb
-sudo yum install php php-mysql
-sudo systemctl restart httpd.service
-php -v
-sudo chown -R root.root /var/www/html/ #sammy is exmple. user
-
+   ip addr show enp0s3 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+   sudo systemctl enable httpd.service
+   sudo yum install mariadb-server
+   sudo systemctl start mariadb
+   sudo systemctl enable mariadb.service
+   sudo systemctl status mariadb
+   sudo yum install php php-mysql
+   sudo systemctl restart httpd.service
+   php -v
+   sudo chown -R root.root /var/www/html/ #sammy is exmple. user 
+   
 nano /var/www/html/nano a.sh
-bash a.sh
-ip addr
-cd /var/www/html/
-nano index.php
-
+bash a.sh 
+ ip addr
+  cd /var/www/html/
+  nano index.php 
+ 
 
 ---------------------- TERCEIRO
 
@@ -161,9 +130,3 @@ A INPUT -m state --state NEW -m tcp -p tcp --match multiport --dports 80,443,330
 
 systemctl enable iptables
 systemctl restart iptables
-
-🚀🛠️📫
-<a href="[link]">[link]</a>
-
-[logo]: scripts/logo.png
-[link](https://www.example.com/my%20great%20page "lol")
