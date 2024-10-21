@@ -1,57 +1,8 @@
 ---
-# include "src/about.md"
----
----
-{{about.md}}
----
----
-@import "about.md"
----
-
-<script> 
-  $(function() {
-    var mdit = window.markdownit();
-    mdit.options.html=true;
-    // Process all div elements of class include.  Follow up with custom callback
-    $('div.include').each( function() {
-      var inc = $(this);
-      // Use contents between div tag as the file to be included from server
-      var filename = inc.html();
-      // Unable to intercept load() contents.  post-process markdown rendering with callback
-      inc.load(filename, function () {
-        inc.html( mdit.render(this.innerHTML) );
-      });
-  });
-})
-</script>
-</head>
-
-<body>
-<h1>Master Document </h1>
-
-<h1>Section 1</h1>
-<div class="include">about.md</div>
-<hr/>
-
-
-
-
----
 # src/index.liquid
 title: "11ty-2289"
 ---
-
 <h1>{{ title }}</h1>
-<!-- ./about.md -->
-<!-- .about.md -->
----
-# about.md
----
-{% renderFile "about.md" %}
-
-<footer>
-  <p>&copy; 2099</p>
-</footer>
 
 <h1 align="center">Bash Almalinux 8</h1>
 <h6 align="center">💻 Linguagens de Programação</h6>
