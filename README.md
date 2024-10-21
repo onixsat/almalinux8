@@ -7,12 +7,12 @@
 <br />
 <div align="center">
   <a href="https://github.com/onixsat">
-    <img src="[logo]" alt="Logo" width="80" height="80">
+    <img src="[logo1]" alt="Logo" width="80" height="80">
   </a>
 
   
-Here is the [first link][var1]
-[var1]: https://example.org
+Here is the [var0][var1]
+
 
 <script type="application/javascript">
     title = "Document Title"
@@ -20,7 +20,8 @@ Here is the [first link][var1]
 
 # **<script>document.write(title)</script>**
 
-The content of <script>document.write(title)</script> is a document outlining blah blah blah (see? it works in a body context, too).
+<script>document.write(title)</script>
+<script>document.write(title2)</script>
 
 
 [I'm an inline-style link with title](https://www.somewebsite.com "somewebsite's Homepage")
@@ -66,7 +67,9 @@ Or leave it empty and use the [logo]
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: https://github.com/othneildrew/Best-README-Template/blob/main/images/screenshot.png?raw=true
 [logo]: https://github.com/othneildrew/Best-README-Template/blob/main/images/logo.png?raw=true
-
+[var0]: https://example.org
+[var1]: https://example.org
+![logo1](https://github.com/othneildrew/Best-README-Template/blob/main/images/logo.png?raw=true)
 
 ### Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
