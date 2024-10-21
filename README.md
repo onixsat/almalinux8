@@ -55,13 +55,7 @@ find /home/*/public_html -type f -exec chmod 644 {} \;
 chown -R nobody /home/project/ \
 chown -R project /home/project/
 
-
-
-
-
-
-
-Primeiro
+# Primeiro
 
 ``` Iniciar
 cd /home
