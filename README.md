@@ -1,32 +1,65 @@
 <h1 align="center">Bash Almalinux 8</h1>
-<h6 align="center"></h6>
+<h6 align="center">💻 Linguagens de Programação</h6>
 
+<a id="readme-top"></a>
 
-[I'm an inline-style link](https://www.somewebsite.com)
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/onixsat">
+    <img src="[logo]" alt="Logo" width="80" height="80">
+  </a>
 
 [I'm an inline-style link with title](https://www.somewebsite.com "somewebsite's Homepage")
+Or leave it empty and use the [logo]
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.somewebsite.org
 [1]: http://somewebsite.org
-[link text itself]: http://www.somewebsite.com
+[logo]: https://github.com/othneildrew/Best-README-Template/blob/main/images/logo.png?raw=true
 
 
-<!-- CONFIGURAÇÃO -->
-## Configuração
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[product-screenshot]: https://github.com/othneildrew/Best-README-Template/blob/main/images/screenshot.png?raw=true
+[logo]: https://github.com/othneildrew/Best-README-Template/blob/main/images/logo.png?raw=true
+
+
+### Configuração
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
-<!-- códigos -->
+
 ## Códigos
 * Códigos gerais para shell
 
@@ -68,12 +101,11 @@ function carregar(){
 
 esperar carregar "${WHITE}Carregando..." "Carregado!"
 ```
----
 
 * Outros
  Contato
-----
-Continuar...
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <br>
 ---
@@ -197,5 +229,5 @@ A INPUT -m state --state NEW -m tcp -p tcp --match multiport --dports 80,443,330
 
 systemctl enable iptables
 systemctl restart iptables
-<h6 align="center">💻 Linguagens de Programação</h6>
+
 🚀🛠️📫
