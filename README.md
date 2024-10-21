@@ -4,13 +4,17 @@
 title: New Issue
 labels: bug, enhancement
 ---
-
+___
+___
 <br>
 <!--#
 NOUN=mother
 ATTRIBUTION=Mark Wahlberg
 $-->
 <br>
+___
+___
+
 "Say hi to your {{ NOUN }} for me," {{ ATTRIBUTION }}
 <!-- CONFIGURAÇÃO -->
 ## Configuração
