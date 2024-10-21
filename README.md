@@ -1,9 +1,3 @@
----
-# src/index.liquid
-title: "ok"
----
-<h1>[title]</h1>
-
 <h1 align="center">Bash Almalinux 8</h1>
 <h6 align="center">💻 Linguagens de Programação</h6>
 
