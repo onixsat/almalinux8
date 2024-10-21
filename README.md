@@ -38,7 +38,7 @@
 </details>
 
 
-<a href="https://www.example.com/">link ou [logo]</a>
+<a href="https://www.example.com/">link ou [link]</a>
 
 [logo]: scripts/logo.png
 [link]: (https://www.example.com/my%20great%20page)
