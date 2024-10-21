@@ -1,4 +1,7 @@
 <h1 align="center">Bash Almalinux 8</h1>
+<h6 align="center">💻 Linguagens de Programação</h6>
+
+****
 
 
 <!-- CONFIGURAÇÃO -->
@@ -19,7 +22,6 @@ chattr -i /etc/mailhelo
 chattr +i /etc/mailips
 chattr +i /etc/mailhelo
 ```
----
 
 * Outros
 
@@ -179,5 +181,4 @@ A INPUT -m state --state NEW -m tcp -p tcp --match multiport --dports 80,443,330
 systemctl enable iptables
 systemctl restart iptables
 
-<h6 align="center">💻 Linguagens de Programação</h6>
 🚀🛠️📫
