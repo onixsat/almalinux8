@@ -1,132 +1,145 @@
-__Bash Almalinux 8__
----
-___
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
+<!-- PROJECT LOGO -->
+<div align="center">
+  <a href="https://github.com/onixsat">
+    <img src="scripts/logo.png" alt="Logo" width="60" height="60">
+  </a>
+<h3 align="center">Bash Almalinux 8</h3>
+<br>
+</div>
 
-<h5 style="height:0px">Configuração</h5>
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+<!-- Configuração -->
+## 🚀 Configuração
+
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
----
-Continuar...
 
----
-## recursive WP file & folder permissions fix
-find /home/*/public_html -type d -exec chmod 755 {} \;\
-find /home/*/public_html -type f -exec chmod 644 {} \;
+<!-- GETTING STARTED -->
+## Getting Started
 
+texo
+### Prerequisites
 
-chown -R nobody /home/project/ \
-chown -R project /home/project/
+txt
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
+### Installation
 
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
 
-
-
-
-
-Primeiro
-
-``` Iniciar
-cd /home
-git clone https://github.com/onixsat/almalinux8.git
-cd almalinux8
-bash btk.sh
-
-wget https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/iniciar.sh -O ./iniciar.sh && bash iniciar.sh
-```
------------------------------------
- sudo chmod +x ~/virtualhost
-https://raw.githubusercontent.com/onixsat/almalinux8/refs/heads/main/scripts/install_cpanel.sh
-
-echo "Install php..."
-sudo apt-get install software-properties-common -y
-sudo add-apt-repository ppa:ondrej/php -y
-sudo apt install php7.4 php7.4-dev php7.4-cli libapache2-mod-php7.4 php7.4-common php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-intl php7.4-mysql php7.4-cli php7.4-zip php7.4-curl -y
-
-hostnamectl set-hostname my.new-hostname.server
-hostnamectl
-nano /etc/hosts
-cd etc/sysconfig/network-scripts/
-
----------------------- PRIMEIRO
-
-curl -s -L https://www.alphagnu.com/upload/centos7-repo-fix.sh | bash
-yum install wget nano net-tools -y
-yum -y update
-yum -y upgrade
-yum install epel-release
-yum install nginx
-
-#wget https://raw.githubusercontent.com/zpanel/installers/refs/heads/master/install/beta/CentOS_7/beta-Centos-7-10.1.1.sh
-
----------------------- SEGUNDO
-
-    ip addr
-    hostname
-    nano /etc/hosts
-    nano /etc/hostname 
-    ping onixsat.line.pm
-    ifconfig
-   ip addr show enp0s3 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
-   sudo systemctl enable httpd.service
-   sudo yum install mariadb-server
-   sudo systemctl start mariadb
-   sudo systemctl enable mariadb.service
-   sudo systemctl status mariadb
-   sudo yum install php php-mysql
-   sudo systemctl restart httpd.service
-   php -v
-   sudo chown -R root.root /var/www/html/ #sammy is exmple. user 
-   
-nano /var/www/html/nano a.sh
-bash a.sh 
- ip addr
-  cd /var/www/html/
-  nano index.php 
- 
-
----------------------- TERCEIRO
-
-nano C:\Windows\System32\drivers\etc\hosts
-192.168.1.95	onixsat.line.pm
-46.189.234.37 	onixsat.line.pm
-
-
----------------------- QUARTO
-
-
-https://freedomain.one
-onixsat.line.pm
-
-----------------------------------
-https://www.youtube.com/watch?v=MZ7n0MeQvGU
-
-curl -s -L https://www.alphagnu.com/upload/centos7-repo-fix.sh | bash
-https://gitsang.github.io/docs/linux/install_php74_on_centos7/
-https://gist.github.com/Henriquedn/a93f058be4965d2cd6b61a1d0e3cfd1e
-https://github.com/mahmudtopu3/Deploy-PHP-Laravel-Application-on-Linux-Centos-7-VPS-Server-Guidelines-
-https://www.linuxhelp.com/how-to-install-phpvirtualbox-in-centos-manage-virtualbox#!#google_vignette~
-https://gist.github.com/virbo/71776c0a7f3c1442147eb9f5b4306af5
-https://raw.githubusercontent.com/mdichirico/public-shell-scripts/master/setup-lamp-stack-on-cent-os-7.sh
-https://gist.github.com/nunorbatista/919d8e888115930cebe2
-https://gist.github.com/rajibbinalam/3265bf0e9878daedf2ce36d0b8769fad
-https://gist.github.com/RatserX/b67ac5dc24e05ee6747950f40d232e7b
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-yum -y install wget zip unzip net-tools yum-utils
-yum install httpd mysql-server php php-mysql
+<!-- USAGE EXAMPLES -->
+## Usage
 
-chkconfig httpd on
-chkconfig mysqld on
+txt
 
-systemctl stop firewalld
-systemctl mask firewalld
-yum install iptables-services -y
-nano /etc/sysconfig/iptables
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
-A INPUT -m state --state NEW -m tcp -p tcp --match multiport --dports 80,443,3306 -j ACCEPT
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-systemctl enable iptables
-systemctl restart iptables
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+texto **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+
+Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [1](kkk0)
+* [xx]("ok)
+* []()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-url]: https://github.com/github_username/repo_name/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo_name/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo_name/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/linkedin_username
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 

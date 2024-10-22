@@ -188,7 +188,7 @@ function sub-menu {
                                       # Main Code
                                       if [ "$line" == "Update" ]
                                       then
-
+                                        banner "Apache" "Configuracão" "Atualização"
                                           titulo "Atualizando o sistema..."
 
 
@@ -201,22 +201,21 @@ function sub-menu {
                                           esperar "$dados" "${WHITE}Atualizando..." "Atualizado!"
 
                                           function app1(){
-#                                          start_time2=$(date +%s%3N)
+                                          start_time2=$(date +%s%3N)
 
                                            start_loading "Atualizando..."
-                                            sudo yum update -y >> a1.txt
-                                            ls >> a1.txt
-                                            mkdir delete >> a1.txt
-                                            sudo yum upgrade -y >> a1.txt
-                                            #> /dev/null 2>&1
-                                           stop_loading $?
+                                            sudo yum update -y >> b.txt
+                                            hostname >> b.txt
+                                            sudo yum upgrade -y > /dev/null 2>&1
+                                          stop_loading $?
 
-#                                          end_time2=$(date +%s%3N)
-#                                          duration_ms2=$((end_time2 - start_time2))
-#                                          echo "Execution: $duration_ms2"
+                                          end_time2=$(date +%s%3N)
+                                          duration_ms2=$((end_time2 - start_time2))
+                                          echo "Execution: $duration_ms2"
                                         }
-                                          #esperar app1 "${WHITE}Atualizando... " "Atualizado!" >> a2.txt
-
+                                          esperar "app1 >> c.txt" "${WHITE}Atualizando... " "Atualizado!" >> d.txt
+echo "ok"
+sleep 10
                                       elif [ "$line" == "Password" ]
                                       then
                                           banner "Apache" "Configuracão" "Password"
@@ -235,6 +234,7 @@ function sub-menu {
 
                                       elif [ "$line" == "Config1" ]
                                       then
+                                        banner "Apache" "Configuracão" "Cnf1"
                                           titulo "Stopping and disabling NetworkManager and disabling SELINUX."
                                           declare -A myArray
                                             myArray[A]="systemctl stop NetworkManager"
