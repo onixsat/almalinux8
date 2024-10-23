@@ -5,10 +5,11 @@
   <br>
   <a id="readme-top"></a>
 </div>
-<details>
+<details open>
   <summary>Menu de Nevegação</summary>
   <ol>
     <li><a href="#INSTALAR">Instalação</a></li>
+<li><a href="#TESTE">TESTE</a></li>
     <li><a href="#PASSWORDS">Passwords</a></li>
     <li>
       <a href="#CODIGOS">Códigos</a>
@@ -21,6 +22,17 @@
     <li><a href="#CONTATOS">Contatos</a></li>
   </ol>
 </details>
+
+<details>  
+  <summary>Click to expand dropdown</summary>    
+  <div class="image-container">    
+    <a href="https://google.com">    
+      <span style="content:url('https://r7.hiclipart.com/path/133/147/693/arrow-bullet-computer-icons-bullet-holes-e2beb2b74def46ebed678b15bb0e8012.png');width:100px;height:100px"></span>
+    </a>
+  </div>    
+</details>
+
+
 <div id="INSTALAR">
 
   <h2 style="font-style:italic;">🛠️ Instalação</h2>
@@ -34,6 +46,14 @@
  ```
 
 </div>
+
+<details id="TESTE">
+<summary>VER TESTE</summary>
+<pre>
+<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+</pre>
+</details>
 
 <div id="PASSWORDS">
 
