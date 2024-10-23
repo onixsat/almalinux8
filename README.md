@@ -25,13 +25,15 @@
 <div id="INSTALAR">
 
   <h2 style="font-style:italic;">🛠️ Instalação</h2>
-  <h6 style="font-style:italic;">Executar os comandos para instalar o sistema.
-  ```bash
+
+  <h6 style="font-style:italic;">Executar os comandos para instalar o sistema.</h6>
+
+```bash
   sudo sudo
   git clone https://github.com/onixsat/almalinux8.git
   cd almalinux8
   bash btk.sh
-  ```
+ ```
 
 </div>
 
@@ -40,8 +42,15 @@
   <h2 style="font-style:italic;">📫 Passwords</h2>
 
 _Códigos de script básicos para utilizaão na shell linux._
+
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-  <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+
+ <!-- PASSWORDS -->
+<h2 style="font-style:italic;">📫 Passwords</h2>
+
+<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
 </div>
 
