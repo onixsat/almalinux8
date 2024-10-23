@@ -1,11 +1,8 @@
-<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
-
 <div align="center">
   <h2 style="text-align: center;">Configuração Almalinux 8</h2>
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
-  <br><br><br>
+  <br><br>
   <a id="readme-top"></a>
 </div>
 <details>
@@ -24,9 +21,7 @@
     <li><a href="#CONTATOS">Contatos</a></li>
   </ol>
 </details>
-
-
-
+<br>
 <div id="INSTALAR">
 
   <h2 style="font-style:italic;">🛠️ Instalação</h2>
@@ -44,9 +39,7 @@
 <div id="PASSWORDS">
 
   <!-- PASSWORDS -->
-### 📫 Passwords
-* lol
-
+<h2 style="font-style:italic;">📫 Passwords</h2>
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
