@@ -40,18 +40,15 @@
 <details id="PASSWORDS" open>
 <summary>📫 Passwords</summary>
 
-## oi
-<sub>[SSH](root) <span style='color:lightblue'>Username: *root* </span> Password: <span style="color:gray">*Palmalinux*</span></sub>\
 
-<sub>[SSH](root) Username: *root*  Password: *Palmalinux*</sub>
-
----
+<div style='color:lightblue'>Username: *root* </div>
 
 <sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">
-  *12345*</span></sup>
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
-<pre>$ php</pre>
+<code>
+<div style='color:lightblue'>Username: *root* </div>
+</code>
 </details>
 
 
