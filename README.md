@@ -38,8 +38,9 @@
 <div id="PASSWORDS">
 
   <h2 style="font-style:italic;">📫 Passwords</h2>
-  _Códigos de script básicos para utilizaão na shell linux._\
-  <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+
+_Códigos de script básicos para utilizaão na shell linux._
+<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
   <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
 </div>
@@ -110,9 +111,8 @@
 </div>
 
 <div id='CONTATOS'>
-
+  <div align="right">(<a href="#readme-top">back to top</a>)</div>
   <!-- CONTATOS -->
   <h2 style="font-style:italic;">Contatos</h2>
 OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com
-  <div align="right">(<a href="#readme-top">back to top</a>)</div>
 </div>
