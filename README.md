@@ -39,7 +39,8 @@
 <div id="PASSWORDS">
 
   <!-- PASSWORDS -->
-<h2 style="font-style:italic;">📫 Passwords</h2>
+### 📫 Passwords
+* lol
 
 <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
