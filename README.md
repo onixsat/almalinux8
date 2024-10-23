@@ -71,12 +71,27 @@
 
 </div>
 
+<script src="https://distill.pub/template.v1.js"></script>
+
+This is the first paragraph of the article We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications
+
+<dt-appendix>
+</dt-appendix>
+
+<script type="text/bibliography">
+  @article{gregor2015draw,
+    title={DRAW: A recurrent neural network for image generation},
+    author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
+    journal={arXivreprint arXiv:1502.04623},
+    year={2015},
+    url={https://arxiv.org/pdf/1502.04623.pdf}
+  }
+</script>
+
 <div id="OUTROS">
 
-  <!-- OUTROS -->
-
 * __Outros__
-    ```bash
+  ```bash
     banner "Apache" "Configuracão" "Password"
     titulo "Atualizando o sistema..."
 
@@ -86,38 +101,33 @@
       
     dados=$(jstrings ' && ' "${myArray[@]}")
     esperar "$dados" "${WHITE}Atualizando..." "Atualizado!"
-    ```
+  ```
 
 </div>
 
 <div id="CARREGAR">
 
-  <!-- CARREGAR -->
+* __Carregar__
+  ```bash
+  function carregar(){
+    start_time2=$(date +%s%3N)
+    start_loading "Carregando..."
+    sleep 5
+    stop_loading $?
+    end_time2=$(date +%s%3N)
+    duration_ms2=$((end_time2 - start_time2))
+    echo "Execution: $duration_ms2"
+  }
 
-* _Carregar_
-    ```bash
-    function carregar(){
-      start_time2=$(date +%s%3N)
-      start_loading "Carregando..."
-      sleep 5
-      stop_loading $?
-      end_time2=$(date +%s%3N)
-      duration_ms2=$((end_time2 - start_time2))
-      echo "Execution: $duration_ms2"
-    }
-
-    esperar carregar "${WHITE}Carregando..." "Carregado!"
-    ```
-
+  esperar carregar "${WHITE}Carregando..." "Carregado!"
+  ```
+  
 </div>
 
-<div id='CONTATOS'>
+<div id="CONTATOS">
 
   <div align="right">( <a href="#readme-top">Voltar ao topo</a> )</div>
-  <h3 style="font-style:italic;">Contatos</h3>
+  <h2 style="font-style:italic;">Contatos</h2>
 
   OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com
-
-OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com
-
 </div>
