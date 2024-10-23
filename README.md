@@ -2,7 +2,7 @@
   <h2 style="text-align: center;">Configuração Almalinux 8</h2>
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
-  <br><br>
+  <br>
   <a id="readme-top"></a>
 </div>
 <details>
@@ -21,7 +21,6 @@
     <li><a href="#CONTATOS">Contatos</a></li>
   </ol>
 </details>
-<br>
 <div id="INSTALAR">
 
   <h2 style="font-style:italic;">🛠️ Instalação</h2>
