@@ -1,3 +1,6 @@
+<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+
 <div align="center">
   <h2 style="text-align: center;">Configuração Almalinux 8</h2>
   <h6 align="center">Bash de configuração para servidores</h6>
@@ -22,10 +25,6 @@
   </ol>
 </details>
 
-
-<h5 style="height:0px">Configuração</h5>
-<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
 
 <div id="INSTALAR">
