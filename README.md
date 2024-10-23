@@ -24,8 +24,8 @@
 <br>
 <div id="INSTALAR">
 
-  <h3 style="font-style:italic;">🛠️ Instalação</h3>
-  <h4 style="font-style:italic;">Executar os comandos para instalar o sistema.</h4>
+  <h2 style="font-style:italic;">🛠️ Instalação</h2>
+  <h6 style="font-style:italic;">Executar os comandos para instalar o sistema.</h6>
 
 ```bash
   sudo sudo
@@ -38,17 +38,15 @@
 
 <div id="PASSWORDS">
 
-  <!-- PASSWORDS -->
-<h3 style="font-style:italic;">📫 Passwords</h3>
+  <h3 style="font-style:italic;">📫 Passwords</h3>
 
-<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+  <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+  <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
 </div>
 
 <div id='CODIGOS'>
 
-  <!-- CODIGOS -->
   <h2 style="font-style:italic;">🚀 Códigos</h2>
 
   _Códigos de script básicos para utilizaão na shell linux._
@@ -57,11 +55,9 @@
 
 <div id="BLOQUEAR">
 
-  <!-- BLOQUEAR -->
-
 * __Bloquear__\
   *Bloquear alteração de ficheiros*
-*
+
   ```bash
   chattr -i /etc/mailips
   chattr -i /etc/mailhelo
@@ -70,23 +66,6 @@
   ```
 
 </div>
-
-<script src="https://distill.pub/template.v1.js"></script>
-
-This is the first paragraph of the article We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications
-
-<dt-appendix>
-</dt-appendix>
-
-<script type="text/bibliography">
-  @article{gregor2015draw,
-    title={DRAW: A recurrent neural network for image generation},
-    author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
-    journal={arXivreprint arXiv:1502.04623},
-    year={2015},
-    url={https://arxiv.org/pdf/1502.04623.pdf}
-  }
-</script>
 
 <div id="OUTROS">
 
@@ -129,5 +108,5 @@ This is the first paragraph of the article We can also cite <dt-cite key="gregor
   <div align="right">( <a href="#readme-top">Voltar ao topo</a> )</div>
   <h2 style="font-style:italic;">Contatos</h2>
 
-  OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com
+  _OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com_
 </div>
