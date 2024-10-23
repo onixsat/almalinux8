@@ -9,7 +9,6 @@
   <summary>Menu de Nevegação</summary>
   <ol>
     <li><a href="#INSTALAR">Instalação</a></li>
-<li><a href="#TESTE">TESTE</a></li>
     <li><a href="#PASSWORDS">Passwords</a></li>
     <li>
       <a href="#CODIGOS">Códigos</a>
@@ -21,15 +20,6 @@
     </li>
     <li><a href="#CONTATOS">Contatos</a></li>
   </ol>
-</details>
-
-<details>  
-  <summary>Click to expand dropdown</summary>    
-  <div class="image-container">    
-    <a href="https://google.com">    
-      <span style="content:url('https://r7.hiclipart.com/path/133/147/693/arrow-bullet-computer-icons-bullet-holes-e2beb2b74def46ebed678b15bb0e8012.png');width:100px;height:100px"></span>
-    </a>
-  </div>    
 </details>
 
 
@@ -47,25 +37,22 @@
 
 </div>
 
-<details id="TESTE">
-<summary>VER TESTE</summary>
+<details id="PASSWORDS">
+<summary>PASSWORDS</summary>
 
-<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>
+  <h3 style="font-style:italic;">📫 Passwords</h3>
+
+  <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">
+  *Palmalinux*</span></sub>\
+  <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">
+  *12345*</span></sup>
 
 <pre>
-<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 </pre>
 </details>
 
-<div id="PASSWORDS">
-
-  <h3 style="font-style:italic;">📫 Passwords</h3>
-
-  <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-  <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
-
-</div>
 
 <div id='CODIGOS'>
 
