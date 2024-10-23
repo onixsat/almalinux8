@@ -40,8 +40,8 @@
 <details id="PASSWORDS" open>
 <summary>📫 Passwords</summary>
 
-
-<div style='color:lightblue'>Username: *root* </div>
+* oi
+<h5 style="color:lightblue">Username: *root* </h5>
 
 <sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
