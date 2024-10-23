@@ -1,0 +1,21 @@
+---
+// Component Imports
+import { Markdown } from 'astro/components';
+import Layout from '../layouts/main.astro';
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+const title = 'Astro Markdown';
+const variable = 'content';
+const items = ['A', 'B', 'C'];
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<Layout content={{ title }}>
+	Link to <a href="/other">broken page </a>
+</Layout>
