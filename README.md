@@ -93,7 +93,8 @@ _(🟦)this text will be rendered in blue_
 # text in gray
 @@ text in purple (and bold)@@
 
-<sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+
+<sub>[ [SSH](root) <span style='color:lightblue'># ${Username:\ {\color{red}root}}\ $ ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 <code style="color : red">text</code>
 <code>
