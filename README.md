@@ -1,89 +1,78 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-<!-- PROJECT LOGO -->
-<div align="center">
-  <a href="https://github.com/onixsat">
-    <img src="scripts/logo.png" alt="Logo" width="60" height="60">
-  </a>
-<h3 align="center">Bash Almalinux 8</h3>
-<br>
-</div>
 
-<!-- TABLE OF CONTENTS -->
+<div align="center">
+  <h2 style="text-align: center;">Configuração Almalinux 8</h2>
+  <h6 align="center">Bash de configuração para servidores</h6>
+  <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
+  <br><br><br>
+  <a id="readme-top"></a>
+</div>
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Menu de Nevegação</summary>
   <ol>
+    <li><a href="#INSTALAR">Instalação</a></li>
+    <li><a href="#PASSWORDS">Passwords</a></li>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#CODIGOS">Códigos</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#BLOQUEAR">Bloquear</a></li>
+        <li><a href="#OUTROS">Outros</a></li>
+        <li><a href="#CARREGAR">Carregar</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#CONTATOS">Contatos</a></li>
   </ol>
 </details>
 
-<!-- Configuração -->
-## 🚀 Configuração
+Heading Identifiers:
+### Red text title {#identifier .red}
 
-<sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+Fenced Code Attributes:
+{.red .numberLines startFrom="1"}
+
+Inline Code Attributes:
+`red text`{.red}
+
+Bracketed Spans:
+[This is *some red text*]{.red}
+
+Link Attributes:
+![alt text](the.jpg){.center}
+
+markdown:
+  {:.cool-heading}
+  #Some Title
+
+<h1 class="cool-heading">Some Title</h1>
+
+<style>
+.heading1 {
+    color: red;
+    font-weight:700;
+    font-size: 35px;
+}
+.heading2 {
+    color: blue;
+    font-weight:700;
+    font-size: 30px;
+}
+</style>
+
+<h1 id="identifier" class="heading1">
+    Markdown h1 styles
+</h1>
+<h2 id="identifier" class="heading2">
+    Markdown h2 styles
+</h2>
 
 
-<!-- GETTING STARTED -->
-## Getting Started
 
-texo
-### Prerequisites
+<div id="INSTALAR">
 
-txt
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+  <h2 style="font-style:italic;">🛠️ Instalação</h2>
 
-### Installation
+<h6 style="font-style:italic;">Executar os comandos para instalar o sistema.
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-txt
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
+<<<<<<< HEAD
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -143,3 +132,93 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+=======
+```bash
+  sudo sudo
+  git clone https://github.com/onixsat/almalinux8.git
+  cd almalinux8
+  bash btk.sh
+  ```
+
+</div>
+<div id="PASSWORDS">
+
+  <!-- PASSWORDS -->
+  <h2 style="font-style:italic;">📫 Passwords</h2>
+
+  <sub>[ [SSH](root) <span style="color:lightblue">Username: *root*</span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+  <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+
+</div>
+<div id='CODIGOS'>
+
+  <!-- CODIGOS -->
+  <h2 style="font-style:italic;">🚀 Códigos</h2>
+
+  _Códigos de script básicos para utilizaão na shell linux._
+
+</div>
+<div id="BLOQUEAR">
+
+  <!-- BLOQUEAR -->
+
+* __Bloquear__\
+  *Bloquear alteração de ficheiros*
+*
+  ```bash
+  chattr -i /etc/mailips
+  chattr -i /etc/mailhelo
+  chattr +i /etc/mailips
+  chattr +i /etc/mailhelo
+  ```
+
+</div>
+<div id="OUTROS">
+
+  <!-- OUTROS -->
+
+* __Outros__
+    ```bash
+    banner "Apache" "Configuracão" "Password"
+    titulo "Atualizando o sistema..."
+
+    declare -A myArray
+      myArray[A]="yum update -y"
+      myArray[B]="hostname>h.txt"
+      
+    dados=$(jstrings ' && ' "${myArray[@]}")
+    esperar "$dados" "${WHITE}Atualizando..." "Atualizado!"
+    ```
+
+</div>
+<div id="CARREGAR">
+
+  <!-- CARREGAR -->
+
+* _Carregar_
+    ```bash
+    function carregar(){
+      start_time2=$(date +%s%3N)
+      start_loading "Carregando..."
+      sleep 5
+      stop_loading $?
+      end_time2=$(date +%s%3N)
+      duration_ms2=$((end_time2 - start_time2))
+      echo "Execution: $duration_ms2"
+    }
+
+    esperar carregar "${WHITE}Carregando..." "Carregado!"
+    ```
+
+</div>
+
+<div id='CONTATOS'>
+
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <!-- CONTATOS -->
+  <h2 style="font-style:italic;">Contatos</h2>
+
+OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com
+
+</div>
+>>>>>>> a7410cd58a357c8a26e41bd6d966538b56ce2f21
