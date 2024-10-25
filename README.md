@@ -2,9 +2,9 @@
   <a href="https://onixsat">
     <img src="logo5.png" alt="reveal.js" width="350">
 </a>
-  
+
 <sub>&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;Bash de configuração para servidores</sub>
-  <a id="readme-top"></a>
+<a id="readme-top"></a>
 </div>
 
 <details>
@@ -122,5 +122,5 @@ _OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com_
 </div>
 --- 
 <div align="center">
-  MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
+_MIT licensed | Copyright © 2011-2024 OnixSat, smartapi@protonmail.com_
 </div>
