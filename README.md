@@ -113,14 +113,9 @@ _Códigos de script básicos para utilizaão na shell linux._
 
 </div>
 
-<div id="CONTATOS">
-
+<div align="center" id="CONTATOS">
   <div align="right">( <a href="#readme-top">Voltar ao topo</a> )</div>
-  <h2 style="font-style:italic;">Contatos</h2>
 
-_OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com_
-</div>
---- 
-<div align="center">
-_MIT licensed | Copyright © 2011-2024 OnixSat, smartapi@protonmail.com_
+  ___
+  _MIT licensed | Copyright © 2011-2024  [@onixsat](https://onixsat.pt), smartapi@protonmail.com_
 </div>
