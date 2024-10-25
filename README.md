@@ -4,11 +4,7 @@
     <h6>Bash de configuração para servidores</h6>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;Bash de configuração para servidores</div>
     <h6>&nbsp;&nbsp;&nbsp;&nbsp;Bash de configuração para servidores</h6>
-  
 </a>
-
-___
-
   <a id="readme-top"></a>
 </div>
 
