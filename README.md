@@ -1,7 +1,16 @@
 <div align="center">
 
 <font size=5>555<font size=2>222</font></font>
+    Copy code<p class="small-text">This text will be smaller</p> 
+     
+    Copy code.small-text { 
+        font-size: 80%; 
+    } 
 
+
+Copy code<sub>This text will be smaller</sub>      
+
+    Copy code<sup>This text will be bigger</sup> 
   
 ##### ${[\ {\color{#326a95}SSH}}\ ]$ Username ${(\ {\color{#f48522}root}}\ )$
 
