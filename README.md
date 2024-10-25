@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://revealjs.com">
-  <img src="logo4.png" alt="reveal.js" width="500">
+  <img src="logo4.png" alt="reveal.js" width="350">
   </a>
   <br><br>
   <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
