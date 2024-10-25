@@ -1,7 +1,7 @@
 <div align="center">
 
   
-#### _${[\ {\color{#326a95}SSH}}\ ]$ Username${[\ {\color{#f48522} root }}\ ]$ Password${[\ {\color{#f48522} xxxxx }}\ ]$_
+#### ${[\ {\color{#326a95}SSH}}\ ]$ Username${[\ {\color{#f48522} root }}\ ]$ Password${[\ {\color{#f48522} xxxxx }}\ ]$
 
 ## Configuração $\textsf{\color{#f48522}{Almalinux 8}}$
 
