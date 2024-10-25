@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://onixsat">
     <img src="logo5.png" alt="reveal.js" width="350">
-    <h6>Bash de configuração para servidores</h6>
+    <sub>Bash de configuração para servidores</sub>
 </a>
   <a id="readme-top"></a>
 </div>
