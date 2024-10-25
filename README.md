@@ -3,8 +3,7 @@
     <td align="center">
       <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
         <div>
-          <img src="logo4.png" width="290" alt="WorkOS">
-          <img src="logo5.png" width="290" alt="WorkOS">
+          <img src="logo5.png" width="290" alt="OnixSat Logo">
         </div>
         <b>Bash de configuração para servidores</b>
         <div>
