@@ -1,14 +1,12 @@
-<p align="center">
-
+<div align="center">
   <a href="https://revealjs.com">
-  <img src="logo5.png" alt="reveal.js" width="350">
-  <div align="center">
-    <sup>Bash de configuração para servidores.</sup>
-    <sub>Bash de configuração para servidores.</sub>
-  </div>
+    <img src="logo5.png" alt="reveal.js" width="350">
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;Bash&ensp;&thinsp; de configuração para servidores</div>
   </a>
+
+___
   <a id="readme-top"></a>
- </p>
+ </div>
 
 <details>
   <summary>Menu de Nevegação</summary>
