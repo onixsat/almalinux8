@@ -2,30 +2,21 @@
   <a href="https://revealjs.com">
   <img src="logo4.png" alt="reveal.js" width="350">
   </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+ </p>
 <div align="center">
 
-`Hello This is a code`
-`` Using `single back ticks` inside double back ticks``
-
-'Hello This is a code'
-
-Some of these words <ins>will be underlined</ins>
 
 <sub>This text will be smaller</sub>      
-<sup>This text will be bigger</sup> 
-  
+<sup>This text will be bigger</sup>
+
 ##### ${[\ {\color{#326a95}SSH}}\ ]$ Username ${(\ {\color{#f48522}root}}\ )$
 
 ## Configuração $\textsf{\color{#f48522}{Almalinux 8}}$
 
-  <h6 align="center">Bash de configuração para servidores</h6>
-  <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
-  <br>
-  <a id="readme-top"></a>
+<h6 align="center">Bash de configuração para servidores</h6>
+<a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
+<br>
+<a id="readme-top"></a>
 </div>
 <details open>
   <summary>Menu de Nevegação</summary>
@@ -63,8 +54,8 @@ Some of these words <ins>will be underlined</ins>
 
 <div id="INSTALAR">
 
-  <h2 style="font-style:italic;">🛠️ Instalação</h2>
-  <h6 style="font-style:italic;">Executar os comandos para instalar o sistema.</h6>
+<h2 style="font-style:italic;">🛠️ Instalação</h2>
+<h6 style="font-style:italic;">Executar os comandos para instalar o sistema.</h6>
 
 ```bash
   sudo sudo
@@ -92,9 +83,9 @@ Some of these words <ins>will be underlined</ins>
 
 <div id='CODIGOS'>
 
-  <h2 style="font-style:italic;">🚀 Códigos</h2>
+<h2 style="font-style:italic;">🚀 Códigos</h2>
 
-  _Códigos de script básicos para utilizaão na shell linux._
+_Códigos de script básicos para utilizaão na shell linux._
 
 </div>
 
@@ -145,7 +136,7 @@ Some of these words <ins>will be underlined</ins>
 
   esperar carregar "${WHITE}Carregando..." "Carregado!"
   ```
-  
+
 </div>
 
 <div id="CONTATOS">
@@ -153,7 +144,7 @@ Some of these words <ins>will be underlined</ins>
   <div align="right">( <a href="#readme-top">Voltar ao topo</a> )</div>
   <h2 style="font-style:italic;">Contatos</h2>
 
-  _OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com_
+_OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com_
 </div>
 --- 
 <div align="center">
