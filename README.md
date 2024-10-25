@@ -1,6 +1,7 @@
 <div align="center">
 
 <p style="font-size:80%;">This text will be smaller</p> 
+<p style="font-size:30%;">This text will be smaller</p> 
 
 <sub>This text will be smaller</sub>      
 <sup>This text will be bigger</sup> 
