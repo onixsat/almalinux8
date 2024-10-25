@@ -1,4 +1,8 @@
 <div align="center">
+
+### $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
+## $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
+
   <h2 style="text-align: center;">Configuração Almalinux 8</h2>
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
@@ -49,17 +53,15 @@
 # $\textsf{\color{#f5750e}{Introduction}}$
 ### $\textsf{\color{#f48522}{Phase 1.}}$
 #### $\textsf{\color{#326a95}{Section A.}}$
-<h3 style="color:#ff0000">Danger</h3>
-$\textcolor{red}{\textsf{lorem ipsum}}$
-_(SSH)this text will be rendered in blue_
+<h3 style="color:#326a95">Danger</h3>
 
 
+
+$\textcolor{red}{\textsf{Username: *root*}}$
+
+<code>
 <sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
-<code style="color : red">text</code>\
-dd $\ccroot{red}{\textsf{lorem ipsum}}$ ddd
-<code>
-<div style='color:lightblue'>Username: $\textcolor{red}{\textsf{lorem ipsum}}$ </div>
 </code>
 </details>
 
