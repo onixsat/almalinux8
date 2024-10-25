@@ -53,7 +53,8 @@ $\textcolor{red}{\textsf{Username}}$
 </span></sub>\
 
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ]
-Password: _$\textcolor{red}{\textsf{Password}}$_</sup>
+
+Password: $\textcolor{red}{\textsf{Password}}$</sup>
 
 <code></code>
 </details>
