@@ -48,8 +48,12 @@
 
 $\textcolor{red}{\textsf{Username}}$
 
-$<sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <h7 style="color:#f5750e">Danger</h7> <span style="color:gray">*Palmalinux*</span></sub>\
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
+<sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <h7 style="color:#f5750e">Danger</h7> <span style="color:gray">
+*Palmalinux*
+</span></sub>\
+
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] 
+**Password**: *12345*</sup>
 
 <code></code>
 </details>
