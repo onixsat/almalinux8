@@ -44,7 +44,7 @@
 <details id="PASSWORDS">
   <summary>📫 Default Passwords</summary>
 
-<sub>[ [SSH](root) ] Username: $\textcolor{green}{\textsf{\root}}$  Password: $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
+<sub>[ [SSH](root) ] Username: $\textcolor{green}{\textsf{root}}\$  Password: $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
 
 
 <sub>[ [SSH](root) <span style='color:lightblue'>Username: *root*</span> ] Password: $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
