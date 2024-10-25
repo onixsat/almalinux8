@@ -1,7 +1,9 @@
 <div align="center">
+
   
-#### ${[\ {\color{#326a95}SSH}}\ ]$ ${(\ {\color{lightblue}Username: *root*}}\ )$ ${(Password: \ {\color{gray}*Palmalinux*}}\ )$
-## Configuração $\textsf{\color{#f48522}{Almalinux}}$ $\textsf{\color{#326a95}{8}}$
+#### ${[\ {\color{#326a95}SSH}}\ ]$ ${Username:\ {\color{lightblue}*root*}}\ )$ ${(Password: \ {\color{gray}*Palmalinux*}}\ )$
+
+## Configuração $\textsf{\color{#f48522}{Almalinux 8}}$ 
 
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
