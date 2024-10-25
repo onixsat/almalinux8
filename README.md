@@ -42,13 +42,13 @@
 </div>
 
 <details id="PASSWORDS">
-<summary>📫 Passwords</summary>
-
-<h3 style="color:#f5750e">Danger</h3>
+  <summary>📫 Default Passwords</summary>
+  
+  <h3 style="color:#f5750e">Danger</h3>
 
 $\textcolor{red}{\textsf{Username}}$
 
-<sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+$<sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <h7 style="color:#f5750e">Danger</h7> <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
 
 <code></code>
