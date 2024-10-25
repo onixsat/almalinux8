@@ -1,12 +1,13 @@
 <div align="center">
-  <a href="https://revealjs.com">
+  <a href="https://onixsat">
     <img src="logo5.png" alt="reveal.js" width="350">
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;Bash&ensp;&thinsp; de configuração para servidores</div>
+    <h6>&ensp;&thinsp; &ensp;&thinsp; &nbsp;Bash de configuração para servidores</h6>
   </a>
 
 ___
+
   <a id="readme-top"></a>
- </div>
+</div>
 
 <details>
   <summary>Menu de Nevegação</summary>
