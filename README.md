@@ -7,7 +7,7 @@
         </div>
         <b>Bash de configuração para servidores</b>
         <div>
-          <sub>Start selling to enterprise customers with just a few lines of code.</sup>
+          <sub>Start selling to enterprise customers with just a few lines of code.Start selling to enterprise customers with just a few lines of code.</sup>
         </div>
       </a>
     </td>
