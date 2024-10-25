@@ -3,7 +3,16 @@
 ### $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
 ## $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
 
-  <h2 style="text-align: center;">Configuração Almalinux 8</h2>
+# ${This\ is\ a\ {\color{red}Big}}\ Title$
+# $\textsf{\color{#f5750e}{f5750e}}$
+## $\textsf{\color{#f48522}{f48522}}$
+### $\textsf{\color{#326a95}{326a95}}$
+#### $\textsf{\color{#18afd3}{18afd3}}$
+##### $\textsf{\color{#5ec3d5}{5ec3d5}}$
+# $\textsf{\color{#f5750e}{Introduction}}$
+### $\textsf{\color{#f48522}{Phase 1.}}$
+#### $\textsf{\color{#326a95}{Section A.}}$
+
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
   <br>
@@ -44,25 +53,15 @@
 <details id="PASSWORDS" open>
 <summary>📫 Passwords</summary>
 
-# ${This\ is\ a\ {\color{red}Big}}\ Title$
-# $\textsf{\color{#f5750e}{f5750e}}$
-## $\textsf{\color{#f48522}{f48522}}$
-### $\textsf{\color{#326a95}{326a95}}$
-#### $\textsf{\color{#18afd3}{18afd3}}$
-##### $\textsf{\color{#5ec3d5}{5ec3d5}}$
-# $\textsf{\color{#f5750e}{Introduction}}$
-### $\textsf{\color{#f48522}{Phase 1.}}$
-#### $\textsf{\color{#326a95}{Section A.}}$
-<h3 style="color:#326a95">Danger</h3>
+<h3 style="color:#f5750e">Danger</h3>
 
 
+#### $\textcolor{red}{\textsf{Username: *root*}}$
 
-$\textcolor{red}{\textsf{Username: *root*}}$
-
-<code>
 <sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
-</code>
+
+<code></code>
 </details>
 
 
