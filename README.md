@@ -3,7 +3,7 @@
     <img src="logo5.png" alt="reveal.js" width="350">
 </a>
   
-<sub>&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;Bash de configuração para servidores</sub>
+<sub>&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;Bash de configuração para servidores</sub>
   <a id="readme-top"></a>
 </div>
 
