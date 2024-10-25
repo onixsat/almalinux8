@@ -1,23 +1,16 @@
-<div align="center">
-  <table width="1290">
-    <td align="center">
-      <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
-        <div>
-          <img src="logo5.png" width="290" alt="OnixSat Logo">
-        </div>
-        <b>Bash de configuração para servidores</b>
-        <div>
-          <sub>Start selling to enterprise customers with just a few lines of code.Start selling to enterprise customers with just a few lines of code.</sup>
-        </div>
-      </a>
-    </td>
-  </table>
+<p align="center">
+
+  <a href="https://revealjs.com">
+  <img src="logo5.png" alt="reveal.js" width="350">
+  <div align="center">
+    <sup>Bash de configuração para servidores.</sup>
+    <sub>Bash de configuração para servidores.</sub>
+  </div>
+  </a>
   <a id="readme-top"></a>
-</div>
+ </p>
 
-
-
-<details open>
+<details>
   <summary>Menu de Nevegação</summary>
   <ol>
     <li><a href="#INSTALAR">Instalação</a></li>
