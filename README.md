@@ -1,8 +1,10 @@
 <div align="center">
   <a href="https://onixsat">
     <img src="logo5.png" alt="reveal.js" width="350">
-    <div>&ensp;&thinsp; &ensp;&thinsp; &nbsp;Bash de configuração para servidores</div>
-  </a>
+    <h6>&ensp;&thinsp; &ensp;&thinsp; &nbsp;Bash de configuração para servidores</h6>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;Bash&ensp;&thinsp; de configuração para servidores</div>
+  
+</a>
 
 ___
 
