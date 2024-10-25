@@ -40,65 +40,26 @@
 <details id="PASSWORDS" open>
 <summary>📫 Passwords</summary>
 
-* oi
-<h5 style="color:lightblue">Username: *root* </h5>
-  <font color="red">This is some text!</font>
-
 # ${This\ is\ a\ {\color{red}Big}}\ Title$
-
-
-<!-- MARKDOWN THEME -->
 # $\textsf{\color{#f5750e}{f5750e}}$
-
 ## $\textsf{\color{#f48522}{f48522}}$
-
 ### $\textsf{\color{#326a95}{326a95}}$
-
 #### $\textsf{\color{#18afd3}{18afd3}}$
-
 ##### $\textsf{\color{#5ec3d5}{5ec3d5}}$
-
-I copy/paste from my theme to create my headings, similar example to this:
-
 # $\textsf{\color{#f5750e}{Introduction}}$
-
-Some introduction text.
-
 ### $\textsf{\color{#f48522}{Phase 1.}}$
-
-Some phase 1 text.
-
 #### $\textsf{\color{#326a95}{Section A.}}$
-
-Some section a text.
-
-
-
-
-
 <h3 style="color:#ff0000">Danger</h3>
-
-
-
 $\textcolor{red}{\textsf{lorem ipsum}}$
+_(SSH)this text will be rendered in blue_
 
 
-
-_(🟦)this text will be rendered in blue_
-
-
-- text in red
-+ text in green
-  ! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-
-
-<sub>[ [SSH](root) <span style='color:lightblue'># ${Username:\ {\color{red}root}}\ $ ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
+<sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ] Password: <span style="color:gray">*Palmalinux*</span></sub>\
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] Password: <span style="color:gray">*12345*</span></sup>
-<code style="color : red">text</code>
+<code style="color : red">text</code>\
+dd $\ccroot{red}{\textsf{lorem ipsum}}$ ddd
 <code>
-<div style='color:lightblue'>Username: *root* </div>
+<div style='color:lightblue'>Username: $\textcolor{red}{\textsf{lorem ipsum}}$ </div>
 </code>
 </details>
 
