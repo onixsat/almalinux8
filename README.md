@@ -20,9 +20,9 @@
   
 ## $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
 
-## ${Configuração\ {\color{red}Almalinux}}\ 8$
+## ${Configuração\ {\color{#326a95}Almalinux}}\ 8$ ${Configuração1\ {\color{#f48522}Almalinux1}}\ 8$
 
-## Configuração $\textsf{\color{#f48522}{Almalinux}}$ 8
+## Configuração $\textsf{\color{#326a95}{Almalinux}}$ 8 $\textsf{\color{#f48522}{Almalinux}}$
 
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
