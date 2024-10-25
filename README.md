@@ -52,8 +52,8 @@ $\textcolor{red}{\textsf{Username}}$
 *Palmalinux*
 </span></sub>\
 
-<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ] 
-**Password**: *12345*</sup>
+<sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ]
+$\textcolor{red}{\textsf{Password}}$: _12345_</sup>
 
 <code></code>
 </details>
