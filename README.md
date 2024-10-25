@@ -1,6 +1,11 @@
 <div align="center">
 
-### $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
+## $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
+
+# ${Configuração\ {\color{red}Almalinux}}\ 8$
+
+## $\textsf{\color{#f48522}{Configuração Almalinux 8}}$
+
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
   <br>
