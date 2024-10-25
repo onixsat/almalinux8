@@ -1,5 +1,5 @@
 <div align="center">
-  <table>
+  <table width="1290">
     <td align="center">
       <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
         <div>
