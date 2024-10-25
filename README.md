@@ -46,12 +46,12 @@
   
   <h3 style="color:#f5750e">Danger</h3>
 
-$\textcolor{red}{\textsf{Username}}$
-
 <sub>[ [SSH](root) <span style='color:lightblue'>Username: *root* </span> ]
-Password: _$\textcolor{cyan}{\textsf{Palmalinux}}$_</sub>\
+
+Password: _$\textcolor{cyan}{\textsf{Palmalinux}}$_</sub>
+
 <sup>[ [Encriptação](root) <span style="color:lightblue">*Sistema*</span> ]
-Password: _$\textcolor{cyan}{\textsf{12345}}$_</sup>
+Password: _$\textcolor{red}{\textsf{12345}}$_</sup>
 
 <code></code>
 </details>
