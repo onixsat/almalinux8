@@ -1,8 +1,10 @@
 <div align="center">
 
-<p style="font-size:80%;">This text will be smaller</p> 
-<p style="font-size:30%;">This text will be smaller</p> 
+`Hello This is a code`
+`` Using `single back ticks` inside double back ticks``
+    `Hello This is a code`
 
+    `` Using `single back ticks` inside double back ticks``
 <sub>This text will be smaller</sub>      
 <sup>This text will be bigger</sup> 
   
