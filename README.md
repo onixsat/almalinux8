@@ -41,7 +41,7 @@
 
 </div>
 
-<details id="PASSWORDS" open>
+<details id="PASSWORDS">
 <summary>📫 Passwords</summary>
 
 <h3 style="color:#f5750e">Danger</h3>
@@ -117,5 +117,5 @@ _Códigos de script básicos para utilizaão na shell linux._
   <div align="right">( <a href="#readme-top">Voltar ao topo</a> )</div>
   <h2 style="font-style:italic;">&ensp;&thinsp; </h2>
 
- _MIT licensed | Copyright © 2011-2024  [@onixsat](https://onixsat.pt), smartapi@protonmail.com_
+_MIT licensed | Copyright © 2011-2024  [@onixsat](https://onixsat.pt), smartapi@protonmail.com_
 </div>
