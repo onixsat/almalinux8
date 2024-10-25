@@ -2,9 +2,11 @@
 
 `Hello This is a code`
 `` Using `single back ticks` inside double back ticks``
-    `Hello This is a code`
 
-    `` Using `single back ticks` inside double back ticks``
+'Hello This is a code'
+
+Some of these words <ins>will be underlined</ins>
+
 <sub>This text will be smaller</sub>      
 <sup>This text will be bigger</sup> 
   
@@ -128,4 +130,8 @@
   <h2 style="font-style:italic;">Contatos</h2>
 
   _OnixSat - [@onixsat](https://onixsat.pt) - smartapi@protonmail.com_
+</div>
+--- 
+<div align="center">
+  MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
 </div>
