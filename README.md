@@ -1,11 +1,20 @@
 <div align="center">
+
+  
 # $\textsf{\color{#f5750e}{f5750e}}$
+
 ## $\textsf{\color{#f48522}{f48522}}$
+
 ### $\textsf{\color{#326a95}{326a95}}$
+
 #### $\textsf{\color{#18afd3}{18afd3}}$
+
 ##### $\textsf{\color{#5ec3d5}{5ec3d5}}$
+
 # $\textsf{\color{#f5750e}{Introduction}}$
+
 ### $\textsf{\color{#f48522}{Phase 1.}}$
+
 #### $\textsf{\color{#326a95}{Section A.}}$
 
   
