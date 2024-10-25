@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="logo4.png" alt="reveal.js" width="350">
-  </a>
- </p>
-<div align="center">
 <div align="center">
   <table>
     <td align="center">
@@ -11,27 +5,18 @@
         <div>
           <img src="logo4.png" width="290" alt="WorkOS">
         </div>
-        <b>Your app, enterprise-ready.</b>
+        <b>Bash de configuração para servidores</b>
         <div>
-          <sub>Start selling to enterprise customers with just a few lines of code. Add Single Sign-On (and more) in minutes instead of months.</sup>
+          <sub>Start selling to enterprise customers with just a few lines of code.</sup>
         </div>
       </a>
     </td>
   </table>
+  <a id="readme-top"></a>
 </div>
 
-<sub>This text will be smaller</sub>      
-<sup>This text will be bigger</sup>
 
-##### ${[\ {\color{#326a95}SSH}}\ ]$ Username ${(\ {\color{#f48522}root}}\ )$
 
-## Configuração $\textsf{\color{#f48522}{Almalinux 8}}$
-
-<h6 align="center">Bash de configuração para servidores</h6>
-<a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
-<br>
-<a id="readme-top"></a>
-</div>
 <details open>
   <summary>Menu de Nevegação</summary>
   <ol>
