@@ -1,11 +1,9 @@
 <div align="center">
 
   
-#### ${[\ {\color{#326a95}SSH}}\ ]$ Username ${(\ {\color{#f48522}root}}\ )$
+##### ${[\ {\color{#326a95}SSH}}\ ]$ Username ${(\ {\color{#f48522}root}}\ )$
 
 ## Configuração $\textsf{\color{#f48522}{Almalinux 8}}$
-
-## _Configuração $\textsf{\color{#f48522}{Almalinux 8}}$_
 
   <h6 align="center">Bash de configuração para servidores</h6>
   <a href="https://github.com/onixsat"><img src="scripts/logo.png" alt="Logo" width="40" height="40"></a>
