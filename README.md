@@ -1,3 +1,15 @@
+<style>
+red { color: red }
+yellow { color: yellow }
+</style>
+
+<red> red color markdown text</red>
+<yellow> red color markdown text</yellow>
+
+<p><red> red color markdown text</red>
+<yellow> red color markdown text</yellow></p>
+
+
 <div align="center">
   <a href="https://onixsat">
     <img src="logo5.png" alt="reveal.js" width="350">
