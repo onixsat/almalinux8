@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://onixsat">
-    <img src="logo5.png" alt="reveal.js" width="350">
+    <img src="logo6.png" alt="reveal.js" width="350">
 </a>
 
 <sub>&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;Bash de configuração para servidores</sub>
