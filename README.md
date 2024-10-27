@@ -1,7 +1,6 @@
 <div align="center">
   <a href="https://onixsat">
-    <img src="logo6.png" alt="reveal.js" width="350">
-    <img src="logo5.png" alt="reveal.js" width="350">
+    <img src="logo7.png" alt="reveal.js" width="350">
 </a>
 <a id="readme-top"></a>
 </div>
