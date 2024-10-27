@@ -1,20 +1,3 @@
-
-<style>
-  
-red { color: red }
-yellow { color: yellow }
-
-</style>
-
-<red> red color markdown text</red>
-
-<yellow> red color markdown text</yellow>
-
-<p><red> red color markdown text</red>
-
-  <yellow> red color markdown text</yellow></p>
-
-
 <div align="center">
   <a href="https://onixsat">
     <img src="logo5.png" alt="reveal.js" width="350">
@@ -23,7 +6,6 @@ yellow { color: yellow }
 <sub>&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;Bash de configuração para servidores</sub>
 <a id="readme-top"></a>
 </div>
-
 <details>
   <summary>Menu de Nevegação</summary>
   <ol>
@@ -40,9 +22,6 @@ yellow { color: yellow }
     <li><a href="#CONTATOS">Contatos</a></li>
   </ol>
 </details>
-
-
-
 
 <div id="INSTALAR">
 
@@ -72,14 +51,10 @@ yellow { color: yellow }
 <code></code>
 </details>
 
-
-<div id='CODIGOS'>
-
-<h2 style="font-style:italic;">🚀 Códigos</h2>
+<details id="CODIGOS">
+  <summary><h2 style="font-style:italic;">🚀 Códigos</h2></summary>
 
 _Códigos de script básicos para utilizaão na shell linux._
-
-</div>
 
 <div id="BLOQUEAR">
 
@@ -130,6 +105,8 @@ _Códigos de script básicos para utilizaão na shell linux._
   ```
 
 </div>
+
+</details>
 
 <div align="center" id="CONTATOS">
   <div align="right">( <a href="#readme-top">Voltar ao topo</a> )</div>
