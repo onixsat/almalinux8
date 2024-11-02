@@ -33,7 +33,7 @@
   bash btk.sh
  ```
 
-<h6 style="font-style:italic;">
+<sm style="font-style:italic;">
   Ao iniciar vai criar o ficheiro de configuração seguro em <a href="config/config.sh.enc">config/config.sh.enc</a>
   <br>
   Ao iniciar novamente digite a sua password para desencriptar o ficheiro seguro localmente e iniciar o programa.
@@ -41,7 +41,7 @@
   
   _Nota: O arquivo descodificado será eliminado da maquina local quando desligar o terminal._
 
-</h6>
+</sm>
 
 </div>
 
@@ -49,6 +49,7 @@
   <summary >📫 Default Passwords</summary>
 
   _Passwords padrão na configuração do sistema._
+
   <sub >[ [SSH](root) Username: $\textcolor{green}{\textsf{root}}\$ ]  $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
   <sup>[ [Encriptação](root) $\textcolor{green}{\textsf{Sistema}}\$ ] $\textcolor{cyan}{\textsf{12345}}$</sup>
 </details>
