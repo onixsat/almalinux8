@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://onixsat">
-    <img src="scripts/logo.png" alt="Logo" width="350">
+    <img src="scripts/logo9.png" alt="Logo" width="350">
 </a>
 <a id="readme-top"></a>
 </div>
@@ -53,15 +53,9 @@
 
 <details id="PASSWORDS">
   <summary>📫 Default Passwords</summary>
-
+  
 <sub>[ [SSH](root) Username: $\textcolor{green}{\textsf{root}}\$ ]  $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
 <sup>[ [Encriptação](root) $\textcolor{green}{\textsf{Sistema}}\$ ] $\textcolor{cyan}{\textsf{12345}}$</sup>
-
-
-<sub>[ [SSH](root) <span style='color:lightblue'>Username: *root*</span> ] Password: $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
-<sup>[ [Encriptação](root) <span style='color:lightblue'>*Sistema*</span> ] Password: $\textcolor{cyan}{\textsf{12345}}$</sup>
-
-<code></code>
 </details>
 
 <details id="CODIGOS">
@@ -260,3 +254,4 @@ systemctl restart iptables
   
 _MIT licensed | Copyright © 2011-2024  [@onixsat](https://onixsat.pt), smartapi@protonmail.com_
 </div>
+
