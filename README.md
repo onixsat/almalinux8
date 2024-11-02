@@ -46,7 +46,7 @@
 </div>
 
 <details id="PASSWORDS">
-  <summary><h2 style="font-style:italic;">📫 Default Passwords</h2></summary>
+  <summary><h3 style="font-style:italic;">📫 Default Passwords</h3></summary>
 
 *Passwords padrão na configuração do sistema.*
 
