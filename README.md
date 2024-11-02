@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://onixsat">
-    <img src="scripts/logo9.png" alt="Logo" width="350">
+    <img src="scripts/logo.png" alt="Logo" width="350">
 </a>
 <a id="readme-top"></a>
 </div>
@@ -41,21 +41,17 @@
   
   _Nota: O arquivo descodificado será eliminado da maquina local quando desligar o terminal._
 
-  <sm style="font-style:italic;">kkkk</sm>
-  
-  <br><br>
-  xxxxx
-
-
 </h6>
 
 </div>
 
 <details id="PASSWORDS">
-  <summary>📫 Default Passwords</summary>
-  
-<sub>[ [SSH](root) Username: $\textcolor{green}{\textsf{root}}\$ ]  $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
-<sup>[ [Encriptação](root) $\textcolor{green}{\textsf{Sistema}}\$ ] $\textcolor{cyan}{\textsf{12345}}$</sup>
+  <summary >📫 Default Passwords</summary>
+
+  <sm style="font-style:italic;font-size:10px">Passwords padrão na configuração do sistema.</sm>
+  <br>
+  <sub >[ [SSH](root) Username: $\textcolor{green}{\textsf{root}}\$ ]  $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
+  <sup>[ [Encriptação](root) $\textcolor{green}{\textsf{Sistema}}\$ ] $\textcolor{cyan}{\textsf{12345}}$</sup>
 </details>
 
 <details id="CODIGOS">
@@ -254,4 +250,3 @@ systemctl restart iptables
   
 _MIT licensed | Copyright © 2011-2024  [@onixsat](https://onixsat.pt), smartapi@protonmail.com_
 </div>
-
