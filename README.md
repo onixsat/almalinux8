@@ -46,12 +46,12 @@
 </div>
 
 <details id="PASSWORDS">
-  <summary >📫 Default Passwords</summary>
+  <summary><h2 style="font-style:italic;">📫 Default Passwords</h2></summary>
 
-  _Passwords padrão na configuração do sistema._
+*Passwords padrão na configuração do sistema.*
 
-  <sub >[ [SSH](root) Username: $\textcolor{green}{\textsf{root}}\$ ]  $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
-  <sup>[ [Encriptação](root) $\textcolor{green}{\textsf{Sistema}}\$ ] $\textcolor{cyan}{\textsf{12345}}$</sup>
+<sub>[ [SSH](root) Username: $\textcolor{green}{\textsf{root}}\$ ]  $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
+<sup>[ [Encriptação](root) $\textcolor{green}{\textsf{Sistema}}\$ ] $\textcolor{cyan}{\textsf{12345}}$</sup>
 </details>
 
 <details id="CODIGOS">
