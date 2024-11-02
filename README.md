@@ -48,8 +48,7 @@
 <details id="PASSWORDS">
   <summary >📫 Default Passwords</summary>
 
-  <sm style="font-style:italic;font-size:10px">Passwords padrão na configuração do sistema.</sm>
-  <br>
+  _Passwords padrão na configuração do sistema._
   <sub >[ [SSH](root) Username: $\textcolor{green}{\textsf{root}}\$ ]  $\textcolor{cyan}{\textsf{Palmalinux}}$</sub>\
   <sup>[ [Encriptação](root) $\textcolor{green}{\textsf{Sistema}}\$ ] $\textcolor{cyan}{\textsf{12345}}$</sup>
 </details>
